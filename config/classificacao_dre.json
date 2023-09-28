@@ -1,0 +1,1346 @@
+{
+    "7.3.07": {
+        "nivel1": "Receita",
+        "Nivel2": "Receitas N\u00e3o Operacionais",
+        "Nivel3": NaN,
+        "class": "Receita N\u00e3o Operacional",
+        "dre_resum": "Receitas N\u00e3o Operacionais"
+    },
+    "7.3.02": {
+        "nivel1": "Receita",
+        "Nivel2": "Receitas N\u00e3o Operacionais",
+        "Nivel3": NaN,
+        "class": "Receita N\u00e3o Operacional Imobilizado",
+        "dre_resum": "Receitas N\u00e3o Operacionais"
+    },
+    "7.3.01": {
+        "nivel1": "Receita",
+        "Nivel2": "Receitas N\u00e3o Operacionais",
+        "Nivel3": NaN,
+        "class": "Receita N\u00e3o Operacional",
+        "dre_resum": "Receitas N\u00e3o Operacionais"
+    },
+    "7.1.01": {
+        "nivel1": "Receita",
+        "Nivel2": "Receita Bruta de Vendas",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "7.2.01": {
+        "nivel1": "Receita",
+        "Nivel2": "Receitas Operacionais",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "7.2.02": {
+        "nivel1": "Receita",
+        "Nivel2": "Receitas Operacionais",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "7.1.06": {
+        "nivel1": "Receita",
+        "Nivel2": "Receita Bruta de Vendas",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "7.1.04": {
+        "nivel1": "Receita",
+        "Nivel2": "Receita Bruta de Vendas",
+        "Nivel3": NaN,
+        "class": "Devolu\u00e7\u00e3o Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "7.1.03": {
+        "nivel1": "Receita",
+        "Nivel2": "Receita Bruta de Vendas",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "7.1.02": {
+        "nivel1": "Receita",
+        "Nivel2": "Receita Bruta de Vendas",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "7.2.03": {
+        "nivel1": "Receita",
+        "Nivel2": "Receita Bruta de Vendas",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "8.3.05.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais"
+    },
+    "8.1.02.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Compra de materia-prima",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.3.04.29": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.27": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.26": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.25": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.24": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.23": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.22": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.21": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.20": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.14": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.13": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.09": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.08": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.03.20": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": NaN,
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.16": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": NaN,
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.15": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": NaN,
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.14": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.12": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.11": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.01.13": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Imobilizados"
+    },
+    "8.3.01.08": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Imobilizados"
+    },
+    "8.3.01.07": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Imobilizados"
+    },
+    "8.3.01.06": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Imobilizados"
+    },
+    "8.3.01.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Imobilizados"
+    },
+    "8.3.01.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Imobilizados"
+    },
+    "8.3.01.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Imobilizados"
+    },
+    "8.2.05.07": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Frotas"
+    },
+    "8.2.05.06": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Frotas"
+    },
+    "8.1.02.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Compra de materia-prima",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.1.02.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Compra de materia-prima",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.1.02.06": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Compra de materia-prima",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.1.02.07": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Compra de materia-prima",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.1.03.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.2.05.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Frotas"
+    },
+    "8.2.05.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Frotas"
+    },
+    "8.1.03.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.03.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.03.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.2.05.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Frotas"
+    },
+    "8.1.03.06": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.03.08": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.1.03.09": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.2.05.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Frotas"
+    },
+    "8.2.05.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Frotas"
+    },
+    "8.2.04.03.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
+    },
+    "8.2.04.03.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "Dedu\u00e7\u00f5es de Vendas com Impostos"
+    },
+    "8.2.04.02.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
+    },
+    "8.2.04.02.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "Dedu\u00e7\u00f5es de Vendas com Impostos"
+    },
+    "8.2.04.01.15": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
+    },
+    "8.2.04.01.11": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
+    },
+    "8.2.04.01.07": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
+    },
+    "8.2.04.01.06": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "CSLL"
+    },
+    "8.2.04.01.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "IRPJ"
+    },
+    "8.2.04.01.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "Dedu\u00e7\u00f5es de Vendas com Impostos"
+    },
+    "8.2.04.01.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "Dedu\u00e7\u00f5es de Vendas com Impostos"
+    },
+    "8.2.03.04.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.1.03.10": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.2.03.03.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": NaN,
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.03.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.23": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.1.03.11": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.2.03.02.22": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.1.03.13": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.2.03.02.20": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.1.03.14": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.2.03.02.19": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.1.03.15": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.03.16": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.03.17": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.2.03.02.18": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.17": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.16": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.15": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.1.03.19": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Industrializa\u00e7\u00e3o",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.2.03.02.14": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.1.04.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.2.03.02.12": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.10": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.09": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.08": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.01.06": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.01.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.01.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.02.02.08": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.02.02.07": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.02.02.06": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.02.02.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.02.02.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.1.04.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.08": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.09": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.10": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.12": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.13": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.15": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.2.02.02.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.1.04.16": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.18": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.19": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.20": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.21": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.2.02.02.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.01.01.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.02.01.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.01.01.06": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.02.01.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.01.01.07": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.09": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.10": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.12": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.02.01.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.01.01.14": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.15": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.16": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.17": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.18": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.19": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.20": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.21": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.22": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.23": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.24": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": NaN,
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.25": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": NaN,
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.01.26": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": NaN,
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.02.01.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.01.02.17": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.16": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.14": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.13": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.11": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.10": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.06": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.09": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.08": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "1": {
+        "nivel1": "Despesas",
+        "Nivel2": NaN,
+        "Nivel3": NaN,
+        "class": NaN,
+        "dre_resum": NaN
+    },
+    "8.1.01.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Mercadoria Revendida",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.1.01.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Mercadoria Revendida",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.1.01.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de Mercadoria Revendida",
+        "class": "Custo Variavel",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.07": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.1.04.17": {
+        "nivel1": "Despesas",
+        "Nivel2": "Custos",
+        "Nivel3": "Custo de mao-de-obra",
+        "class": "Custo Fixo",
+        "dre_resum": "Custos"
+    },
+    "8.2.01.01.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.01.02.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
+    "8.2.02.01.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.02.02.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Financeiras",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Financeiras"
+    },
+    "8.2.03.01.05": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.03.02.02": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Comerciais",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Vendas/Comerciais"
+    },
+    "8.2.04.01.14": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
+    },
+    "8.2.04.02.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": NaN,
+        "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
+    },
+    "8.2.04.03.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
+    },
+    "8.3.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Imobilizados"
+    },
+    "8.3.01.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Imobilizados"
+    },
+    "8.3.03.04": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.13": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.04.15": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.16": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.17": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.18": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.04.19": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
+    "8.3.06.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais"
+    },
+    "8.3.06.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais"
+    },
+    "8.3.07.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais"
+    },
+    "7.1.07": {
+        "nivel1": "Receita",
+        "Nivel2": "Receita Bruta de Vendas",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    }
+}
