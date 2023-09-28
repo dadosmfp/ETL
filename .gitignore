@@ -1,0 +1,8 @@
+# Ignorar o diretório __pycache__
+__pycache__/
+
+# Ignorar o diretório venv (ambiente virtual Python)
+venv/
+
+# Ignorar o diretório 117
+117/
