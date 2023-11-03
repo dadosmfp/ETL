@@ -20,6 +20,20 @@
         "class": "Receita N\u00e3o Operacional",
         "dre_resum": "Receitas N\u00e3o Operacionais"
     },
+    "7.3.10": {
+        "nivel1": "Receita",
+        "Nivel2": "Receitas N\u00e3o Operacionais",
+        "Nivel3": NaN,
+        "class": "Receita N\u00e3o Operacional",
+        "dre_resum": "Receitas N\u00e3o Operacionais"
+    },
+    "7.3.08": {
+        "nivel1": "Receita",
+        "Nivel2": "Receitas N\u00e3o Operacionais",
+        "Nivel3": NaN,
+        "class": "Receita N\u00e3o Operacional",
+        "dre_resum": "Receitas N\u00e3o Operacionais"
+    },
     "7.1.01": {
         "nivel1": "Receita",
         "Nivel2": "Receita Bruta de Vendas",
@@ -42,6 +56,13 @@
         "dre_resum": "Receita Bruta Operacional"
     },
     "7.1.06": {
+        "nivel1": "Receita",
+        "Nivel2": "Receita Bruta de Vendas",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "7.1.09": {
         "nivel1": "Receita",
         "Nivel2": "Receita Bruta de Vendas",
         "Nivel3": NaN,
@@ -210,6 +231,34 @@
         "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
     },
     "8.3.03.14": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.18": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.19": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.17": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Parcelamentos"
+    },
+    "8.3.03.21": {
         "nivel1": "Despesas",
         "Nivel2": "Despesas N\u00e3o Operacionais",
         "Nivel3": "Despesas N\u00e3o Operacionais",
@@ -440,6 +489,13 @@
         "class": "Despesa Variavel",
         "dre_resum": "Dedu\u00e7\u00f5es de Vendas com Impostos"
     },
+    "8.2.04.02.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "Dedu\u00e7\u00f5es de Vendas com Impostos"
+    },
     "8.2.04.02.03": {
         "nivel1": "Despesas",
         "Nivel2": "Despesas",
@@ -447,7 +503,14 @@
         "class": "Despesa Variavel",
         "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
     },
-    "8.2.04.02.01": {
+    "8.2.04.02.03": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "Despesas com Impostos, Taxas e Licen\u00e7as"
+    },
+    "8.2.04.02.05": {
         "nivel1": "Despesas",
         "Nivel2": "Despesas",
         "Nivel3": "Despesas Tributarias",
@@ -497,6 +560,13 @@
         "dre_resum": "Dedu\u00e7\u00f5es de Vendas com Impostos"
     },
     "8.2.04.01.01": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Tributarias",
+        "class": "Despesa Variavel",
+        "dre_resum": "Dedu\u00e7\u00f5es de Vendas com Impostos"
+    },
+    "8.2.04.01.04": {
         "nivel1": "Despesas",
         "Nivel2": "Despesas",
         "Nivel3": "Despesas Tributarias",
@@ -923,6 +993,13 @@
         "class": "Despesa Fixa",
         "dre_resum": "Despesas Administrativas"
     },
+    "8.2.01.01.08": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas",
+        "Nivel3": "Despesas Administrativas",
+        "class": "Despesa Fixa",
+        "dre_resum": "Despesas Administrativas"
+    },
     "8.2.01.01.09": {
         "nivel1": "Despesas",
         "Nivel2": "Despesas",
@@ -1315,6 +1392,13 @@
         "class": NaN,
         "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
     },
+    "8.3.04.28": {
+        "nivel1": "Despesas",
+        "Nivel2": "Despesas N\u00e3o Operacionais",
+        "Nivel3": "Despesas N\u00e3o Operacionais",
+        "class": NaN,
+        "dre_resum": "Despesas N\u00e3o Operacionais com Emprestimos"
+    },
     "8.3.06.01": {
         "nivel1": "Despesas",
         "Nivel2": "Despesas N\u00e3o Operacionais",
@@ -1337,6 +1421,13 @@
         "dre_resum": "Despesas N\u00e3o Operacionais"
     },
     "7.1.07": {
+        "nivel1": "Receita",
+        "Nivel2": "Receita Bruta de Vendas",
+        "Nivel3": NaN,
+        "class": "Receita Venda",
+        "dre_resum": "Receita Bruta Operacional"
+    },
+    "7.1.08": {
         "nivel1": "Receita",
         "Nivel2": "Receita Bruta de Vendas",
         "Nivel3": NaN,

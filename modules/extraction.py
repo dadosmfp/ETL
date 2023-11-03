@@ -1,48 +1,72 @@
 import os
-import json
 import subprocess
-import requests
 from datetime import datetime, timedelta
-from time import sleep
-import msal
 import pandas as pd
 from modules.auth0 import Authenticator
+from utils.logger import logger
 
-class DataExtractorExcel:
+
+class DataExtractor:
     def __init__(self, data_folder="data"):
         self.data_folder = data_folder
         self.selected_file = None  # Adicione uma variável para armazenar o nome do arquivo selecionado
 
-    def get_excel_files(self):
-        # Verifica se a pasta "data" existe no diretório do projeto
+    def get_files(self, extensions=(".xls", ".xlsx", ".csv", ".txt")):
+        # Verifica se a pasta especificada existe no diretório do projeto
         if not os.path.exists(self.data_folder):
             raise FileNotFoundError(f"A pasta '{self.data_folder}' não existe no diretório do projeto.")
-        # Lista todos os arquivos na pasta "data"
+        # Lista todos os arquivos na pasta especificada
         files = os.listdir(self.data_folder)
-        # Filtrar os arquivos com extensões .xls, .xlsx e .csv
-        excel_csv_files = [file for file in files if file.endswith((".xls", ".xlsx", ".csv"))]
-        if not excel_csv_files:
-            raise FileNotFoundError("Nenhum arquivo .xls, .xlsx ou .csv encontrado na pasta 'data'.")
-        return excel_csv_files
+        # Filtrar os arquivos com as extensões especificadas
+        filtered_files = [file for file in files if file.endswith(extensions)]
+        if not filtered_files:
+            raise FileNotFoundError(f"Nenhum arquivo com extensões {', '.join(extensions)} encontrado na pasta '{self.data_folder}'.")
+        return filtered_files
 
-    def select_excel_file(self, file_name):
-        # Verifica se o arquivo selecionado existe na pasta "data"
-        excel_csv_files = self.get_excel_files()
-        if file_name not in excel_csv_files:
-            raise FileNotFoundError(f"O arquivo '{file_name}' não foi encontrado na pasta 'data'.")
+    def select_file(self, file_name):
+        # Verifica se o arquivo selecionado existe na pasta especificada
+        available_files = self.get_files()
+        if file_name not in available_files:
+            raise FileNotFoundError(f"O arquivo '{file_name}' não foi encontrado na pasta '{self.data_folder}'.")
         self.selected_file = file_name  # Armazena o nome do arquivo selecionado
 
-    def extract_data_from_selected_excel(self):
+    def extract_data(self, column_widths=None, column_names=None):
         if self.selected_file is None:
-            raise ValueError("Nenhum arquivo Excel foi selecionado.")
-        # Caminho completo do arquivo selecionado
-        xls_file_path = os.path.join(self.data_folder, self.selected_file)
-        # Leitura do arquivo .xls usando pandas
-        try:
-            df = pd.read_excel(xls_file_path)
-            return df
-        except Exception as e:
-            raise Exception(f"Erro ao ler o arquivo {xls_file_path}: {str(e)}")
+            raise ValueError("Nenhum arquivo foi selecionado.")
+        
+        file_extension = os.path.splitext(self.selected_file)[-1].lower()
+        file_path = os.path.join(self.data_folder, self.selected_file)
+
+        if file_extension == ".txt":
+            # Leitura do arquivo .txt usando pandas com codificação ISO-8859-1
+            try:
+                if column_widths is None or column_names is None:
+                    raise ValueError("Tanto column_widths quanto column_names devem ser fornecidos.")
+                
+                # Leia o arquivo usando read_fwf com tamanhos e nomes de colunas personalizados
+                df = pd.read_fwf(file_path, widths=column_widths, header=None, names=column_names, encoding='iso-8859-1')
+                
+                # Remova espaços em branco nas colunas
+                df = df.apply(lambda x: x.str.strip())
+                
+                # Definir a primeira linha como cabeçalho
+                df.columns = df.iloc[0]
+                
+                # Remover a primeira linha (que agora é o cabeçalho)
+                df = df[1:]
+                
+                return df
+            except Exception as e:
+                raise Exception(f"Erro ao ler o arquivo {file_path}: {str(e)}")
+        elif file_extension in (".xls", ".xlsx", ".csv"):
+            # Adicione aqui o código para lidar com outros tipos de arquivo, se necessário
+            try:
+                df = pd.read_excel(file_path)
+                return df
+            except Exception as e:
+                raise Exception(f"Erro ao ler o arquivo {file_path}: {str(e)}")
+        else:
+            raise ValueError(f"Tipo de arquivo não suportado: {file_extension}")
 
 class DataExtractorOneDrive:
     def __init__(self, env_file_path, access_token):
@@ -70,12 +94,12 @@ class DataExtractorRpa:
     def __init__(self, comando_java):
         self.comando_java = comando_java
 
-    def dre_rpa(self):
+    def rpa(self):
         # Tente executar o comando
         try:
             subprocess.run(self.comando_java, shell=True, check=True)
-            print("O comando Java foi executado com sucesso.")
+            logger.info("O comando Java foi executado com sucesso.")
         except subprocess.CalledProcessError as e:
-            print(f"O comando Java falhou com o seguinte erro: {e}")
+            logger.error(f"O comando Java falhou com o seguinte erro: {e}")
 
 

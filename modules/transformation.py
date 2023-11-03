@@ -2,18 +2,18 @@ import pandas as pd
 import json
 import re 
 from datetime import datetime, timedelta
-from modules.extraction import DataExtractorExcel
+from modules.extraction import DataExtractor
 from utils.logger import logger
 
 
 # -------------- DRE --------------
 class DataTransformerDre:
     def __init__(self):
-        self.data_extractor = DataExtractorExcel()  # Crie uma instância da classe DataExtractorExcel
+        self.data_extractor = DataExtractor()  # Crie uma instância da classe DataExtractor
         
     def ClassDre(self, df):
         # Carregar o JSON com as informações para adicionar colunas
-        json_file_path = '/home/matheushmfp/Documentos/ETL/config/classificacao_dre.json'
+        json_file_path = 'config\\classificacao_dre.json'
         with open(json_file_path, 'r') as json_file:
             data = json.load(json_file)
         # Adicionar as colunas ao DataFrame
@@ -26,16 +26,16 @@ class DataTransformerDre:
         # Inclua a instrução logger.info para esta função
         logger.info(f'Selecionando o arquivo Excel: {file_name}')
         # Selecione o arquivo Excel que deseja transformar em DataFrame
-        data_transformer.data_extractor.select_excel_file(file_name)
+        data_transformer.data_extractor.select_file(file_name)
         # Inclua uma instrução de log para indicar a extração dos dados
         logger.info('Extraindo os dados do arquivo selecionado...')
         # Extraia os dados do arquivo selecionado
-        df = data_transformer.data_extractor.extract_data_from_selected_excel()
+        df = data_transformer.data_extractor.extract_data()
         # Inclua uma instrução de log para indicar o término da transformação
         logger.info('Dados extraídos com sucesso.')
         return df
     
-    def TransformData(self, df):
+    def TransformData(self, df, empresa):
         # Inclua a instrução logger.info para esta função
         logger.info('Iniciando transformação dos dados...')
         # Mapeamento de nomes das colunas
@@ -100,7 +100,7 @@ class DataTransformerDre:
         df = df[df['Duplicata'].notna()]
         # Use uma expressão regular para encontrar o código na coluna "contafin" e criar uma nova coluna "cod_contafin"
         df = df.copy()
-        df['cod_contafin'] = df['contafin'].str.extract(r'(\d+\.\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+.\d+|\d+\.\d+\.\d+)')
+        df['cod_contafin'] = df['contafin'].str.extract(r'(\d+\.\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+)')
         # Função para remover o padrão da coluna 'contafin'
         def remove_pattern(text):
             return re.sub(r'(\d+\.\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+.\d+|\d+\.\d+\.\d+)\s(.*)', r'\2', text)
@@ -120,8 +120,11 @@ class DataTransformerDre:
         juros_df.drop(columns=['valor'], inplace=True)
         # Renomear a coluna 'Juros' para 'valor' em juros_df
         juros_df.rename(columns={'valorj': 'valor'}, inplace=True)
-        # Modificar a coluna 'contafin' em juros_df para 'Juros'
-        juros_df['contafin'] = 'Juros'
+        # Verifique o valor do 'cod_contafin' é despesa ou receita
+        # Para DESPESA
+        juros_df.loc[juros_df['cod_contafin'].str.startswith('8'), ['contafin', 'dre_resum', 'class']] = ['Juros e Multas sobre Atraso de Pagamentos', 'Despesas Financeiras', 'Despesa Fixa']
+        # Para RECEITA
+        juros_df.loc[juros_df['cod_contafin'].str.startswith('7'), ['contafin', 'dre_resum', 'class']] = ['Outro Valor para Contafin', 'Outro Valor para Dre_resum', 'Outra Classe']
         # Concatenar as linhas modificadas de volta ao DataFrame original
         df = pd.concat([df, juros_df], ignore_index=True)
         # Ordenar o DataFrame pelo índice para que as linhas fiquem na ordem original
@@ -131,11 +134,12 @@ class DataTransformerDre:
         df['valor'] = df['valor'].str.replace(',', '.', regex=False).astype(float)
         # Aplicar a função abs() para tornar os valores positivos
         df['valor'] = df['valor'].abs()
+        df['emp'] = f"{empresa}"
         # Inclua uma instrução de log para indicar o término da transformação
         logger.info('Transformação dos dados concluída.')
         return df
 
-    def transformerBordero(self, df):
+    def transformerBordero(self, df, empresa):
         # Inclua a instrução logger.info para esta função
         logger.info('Iniciando transformação dos dados...')
         # Expressão regular para encontrar a coluna desejada
@@ -226,5 +230,36 @@ class DataTransformerDre:
         df['Nivel3'] = Nivel3
         df['class'] = classi
         df['dre_resum'] = dre_resum
+        df['emp'] = f"{empresa}"
         logger.info('Transformação dos dados concluída.')
+        return df
+
+# -------------- VENDAS --------------
+class DataTransformerVendas:
+    def __init__(self):
+        self.data_extractor = DataExtractor()  # Crie uma instância da classe DataExtractor
+        
+    def ClassDre(self, df):
+        # Carregar o JSON com as informações para adicionar colunas
+        json_file_path = 'config\\classificacao_dre.json'
+        with open(json_file_path, 'r') as json_file:
+            data = json.load(json_file)
+        # Adicionar as colunas ao DataFrame
+        for cod_contafin, info in data.items():
+            for col_name, col_value in info.items():
+                df.loc[df['cod_contafin'] == cod_contafin, col_name] = col_value
+        return df
+        
+    def GetData(self, data_transformer, file_name, column_widths, column_names):
+        # Inclua a instrução logger.info para esta função
+        logger.info(f'Selecionando o arquivo Excel: {file_name}')
+        # Selecione o arquivo Excel que deseja transformar em DataFrame
+        data_transformer.data_extractor.select_file(file_name)
+        # Inclua uma instrução de log para indicar a extração dos dados
+        logger.info('Extraindo os dados do arquivo selecionado...')
+        # Extraia os dados do arquivo selecionado
+        df = data_transformer.data_extractor.extract_data(column_widths, column_names)
+
+        # Inclua uma instrução de log para indicar o término da transformação
+        logger.info('Dados extraídos com sucesso.')
         return df

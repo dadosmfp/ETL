@@ -1,14 +1,15 @@
-import datetime
-import json
 import os
 import requests
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-import chromedriver_autoinstaller
+from utils.logger import logger
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 import msal
 
 class Authenticator:
@@ -41,39 +42,53 @@ class Authenticator:
             self.authority = self.env_vars.get('authority', '')
             self.CHROME_PROFILE_PATH = self.env_vars.get('chrome_profile_path', '')
         except Exception as e:
-            print(f"Erro ao carregar variáveis de ambiente: {e}")
+            logger.error(f"Erro ao carregar variáveis de ambiente: {e}")
             raise e
 
     def authenticate(self):
         try:
-            # Realiza a autenticação usando as variáveis carregadas.
+            # Carregue as variáveis de ambiente antes de criar o aplicativo msal.
             self.load_environment_variables()
+            
             app = msal.ConfidentialClientApplication(
                 self.client_id,
                 authority=self.authority,
                 client_credential=self.client_secret,
             )
             auth_url = app.get_authorization_request_url(self.scopes)
-            chromedriver_autoinstaller.install(cwd=True)
+            
+            '''   -------- WEBDRIVER --------  '''
+            # Crie o serviço do ChromeDriver usando o ChromeDriverManager.
+            chrome_driver_service = ChromeService(ChromeDriverManager().install())
+            # Defina o caminho completo para o diretório de perfil do usuário.
+            user_profile_dir = os.path.join(os.getcwd(), self.CHROME_PROFILE_PATH)
+            # Crie uma instância do driver do Chrome e configure o perfil do usuário.
             options = Options()
-            options.add_argument(self.CHROME_PROFILE_PATH)
-            driver = webdriver.Chrome(options=options)
+            options.add_argument(f"--user-data-dir={user_profile_dir}")
+            options.add_argument("--no-sandbox")
+            driver = webdriver.Chrome(service=chrome_driver_service, options=options)
             driver.get(auth_url)
-            sleep(5)
+
             wait = WebDriverWait(driver, 10)
-            button = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="appConfirmContinue"]')))
-            button.click()
-            sleep(3)
+            try:
+                button = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="appConfirmContinue"]')))
+                if button.is_displayed():
+                    button.click()
+            except TimeoutException:
+                logger.info('O botão não foi encontrado ou não está visível')
+            
             current_url = driver.current_url
             driver.quit()
+            
             code = current_url.split('code=')[1].split('&')[0]
             result = app.acquire_token_by_authorization_code(code, scopes=self.scopes)
+            
             if 'access_token' in result:
                 return result['access_token']
             else:
                 raise Exception('Erro ao obter token de acesso')
         except Exception as e:
-            print(f"Erro na autenticação: {e}")
+            logger.error(f"Erro na autenticação: {e}")
             raise e
 
     def list_files(self, access_token):
@@ -84,15 +99,15 @@ class Authenticator:
                 'Authorization': 'Bearer ' + access_token
             }
             response = requests.get(onedrive_api_url, headers=headers)
-            print(response)
+            logger.info(response)
             if response.status_code == 200:
                 files = response.json()['value']
                 for file in files:
-                    print(f'Nome do arquivo: {file["name"]}')
+                    logger.info(f'Nome do arquivo: {file["name"]}')
             else:
-                print(f'Erro ao listar os arquivos. Código de status: {response.status_code}')
+                logger.error(f'Erro ao listar os arquivos. Código de status: {response.status_code}')
         except Exception as e:
-            print(f"Erro ao listar os arquivos: {e}")
+            logger.error(f"Erro ao listar os arquivos: {e}")
             raise e
         
     def download_file(self, access_token, folder_id, file_name):
@@ -111,11 +126,11 @@ class Authenticator:
                 # Salva o arquivo baixado na pasta de destino.
                 with open(os.path.join(destination_folder, file_name), 'wb') as file:
                     file.write(response.content)
-                print(f'Arquivo "{file_name}" baixado com sucesso.')
+                logger.info(f'Arquivo "{file_name}" baixado com sucesso.')
             else:
-                print(f'Erro ao baixar o arquivo. Código de status: {response.status_code}')
+                logger.error(f'Erro ao baixar o arquivo. Código de status: {response.status_code}')
         except Exception as e:
-            print(f"Erro ao baixar o arquivo: {e}")
+            logger.error(f"Erro ao baixar o arquivo: {e}")
             raise e
         
     def upload_file(self, access_token, folder_id, file_name, file_path):
@@ -131,11 +146,11 @@ class Authenticator:
             # Envia o arquivo para o OneDrive.
             response = requests.put(upload_url, headers=headers, data=file_contents)
             if response.status_code == 201 or 200:
-                print(f'Arquivo "{file_name}" foi carregado com sucesso.')
+                logger.info(f'Arquivo "{file_name}" foi carregado com sucesso.')
             else:
-                print(f'Erro ao carregar o arquivo. Código de status: {response.status_code}')
+                logger.info(f'Erro ao carregar o arquivo. Código de status: {response.status_code}')
         except Exception as e:
-            print(f"Erro ao carregar o arquivo: {e}")
+            logger.info(f"Erro ao carregar o arquivo: {e}")
             raise e
         
     def rename_file(self, access_token, folder_id, old_file_name, new_file_name):
@@ -153,11 +168,11 @@ class Authenticator:
             # Realiza a solicitação PATCH para renomear o arquivo.
             response = requests.patch(rename_url, headers=headers, json=request_body)
             if response.status_code == 200:
-                print(f'Arquivo renomeado para "{new_file_name}" com sucesso.')
+                logger.info(f'Arquivo renomeado para "{new_file_name}" com sucesso.')
             else:
-                print(f'Erro ao renomear o arquivo. Código de status: {response.status_code}')
+                logger.error(f'Erro ao renomear o arquivo. Código de status: {response.status_code}')
         except Exception as e:
-            print(f"Erro ao renomear o arquivo: {e}")
+            logger.error(f"Erro ao renomear o arquivo: {e}")
             raise e
     
     def get_file_id_by_name(self, access_token, folder_id, file_name):
@@ -176,10 +191,10 @@ class Authenticator:
                 # Se o arquivo não for encontrado, retorne None.
                 return None
             else:
-                print(f'Erro ao listar os itens na pasta. Código de status: {response.status_code}')
+                logger.error(f'Erro ao listar os itens na pasta. Código de status: {response.status_code}')
                 return None
         except Exception as e:
-            print(f"Erro ao obter o ID do arquivo: {e}")
+            logger.error(f"Erro ao obter o ID do arquivo: {e}")
             raise e
     
     def move_file(self, access_token, source_folder_id, destination_folder_id, file_name):
@@ -203,11 +218,11 @@ class Authenticator:
                 # Realiza a solicitação PATCH para mover o arquivo.
                 response = requests.patch(move_url, headers=headers, json=request_body)
                 if response.status_code == 200:
-                    print(f'Arquivo "{file_name}" movido para a pasta de destino com sucesso.')
+                    logger.info(f'Arquivo "{file_name}" movido para a pasta de destino com sucesso.')
                 else:
-                    print(f'Erro ao mover o arquivo. Código de status: {response.status_code}')
+                    logger.error(f'Erro ao mover o arquivo. Código de status: {response.status_code}')
             else:
-                print(f'Arquivo não encontrado na pasta de origem.')
+                logger.error(f'Arquivo não encontrado na pasta de origem.')
         except Exception as e:
-            print(f"Erro ao mover o arquivo: {e}")
+            logger.error(f"Erro ao mover o arquivo: {e}")
             raise e

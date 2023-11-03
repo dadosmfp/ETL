@@ -11,7 +11,7 @@ logging.basicConfig(
 logger = logging.getLogger('ETLAppLogger')
 
 # Se você deseja redirecionar os logs para um arquivo, descomente as linhas abaixo
-# handler = logging.FileHandler('etl_app.log')
-# formatter = logging.Formatter('%(asctime)s [%(levelname)s]: %(message)s')
-# handler.setFormatter(formatter)
-# logger.addHandler(handler)
+handler = logging.FileHandler('etl_app.log')
+formatter = logging.Formatter('%(asctime)s [%(levelname)s]: %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
