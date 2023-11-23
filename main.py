@@ -167,8 +167,7 @@ if __name__ == "__main__":
             file_path='data\\base.xlsx'
         )
     LimpaData("data")
-    sleep(5)
-
+    sleep(3)
     comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
@@ -198,6 +197,8 @@ if __name__ == "__main__":
     ltv = Vendas.LtvVendas(
         'ltv.txt',
         column_names=[
+            'cod_cliente',
+            'cliente',
             'endereco',
             'numero',
             'ddd',

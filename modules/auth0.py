@@ -68,7 +68,6 @@ class Authenticator:
             options.add_argument("--no-sandbox")
             driver = webdriver.Chrome(service=chrome_driver_service, options=options)
             driver.get(auth_url)
-
             wait = WebDriverWait(driver, 10)
             try:
                 button = wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="appConfirmContinue"]')))

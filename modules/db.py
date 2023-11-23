@@ -56,12 +56,47 @@ class DatabaseConnection:
         except Exception as e:
             print(f"Erro ao criar a tabela: {e}")
 
+    def alter_table(self, table_name, new_column_name, new_column_datatype):
+        try:
+            with self.engine.connect() as connection:
+                # Construa a instrução SQL para alterar a tabela
+                alter_table_sql = text(f"ALTER TABLE `{table_name}` ADD COLUMN `{new_column_name}` {new_column_datatype};")
+                # Execute a instrução SQL
+                connection.execute(alter_table_sql)
+                print(f"Coluna '{new_column_name}' adicionada à tabela '{table_name}'.")
+        except Exception as e:
+            print(f"Erro ao alterar a tabela: {e}")
+    
+    def drop_table(self, table_name):
+        try:
+            with self.engine.connect() as connection:
+                # Construa a instrução SQL para dropar a tabela
+                drop_table_sql = text(f"DROP TABLE IF EXISTS `{table_name}`;")
+                # Execute a instrução SQL
+                connection.execute(drop_table_sql)
+                print(f"Tabela '{table_name}' excluída com sucesso.")
+        except Exception as e:
+            print(f"Erro ao excluir a tabela: {e}")
+
+    def drop_column(self, table_name, column_name):
+        try:
+            with self.engine.connect() as connection:
+                # Construa a instrução SQL para dropar a coluna
+                drop_column_sql = text(f"ALTER TABLE `{table_name}` DROP COLUMN `{column_name}`;")
+                # Execute a instrução SQL
+                connection.execute(drop_column_sql)
+                print(f"Coluna '{column_name}' excluída da tabela '{table_name}'.")
+        except Exception as e:
+            print(f"Erro ao excluir a coluna: {e}")
+
 if __name__ == "__main__":
     
 
     db_connection = DatabaseConnection()
     db_connection.connect()
-    db_connection.insert_data_from_excel("representantes", r'data\\repres_01.xlsx')
-    db_connection.insert_data_from_excel("meta2023", r'data\\meta_2023.xlsx')
-    db_connection.insert_data_from_excel("cidades", r'data\\cidades.xlsx')
+    db_connection.alter_table(
+        table_name='ltv',
+        new_column_name='cliente',
+        new_column_datatype='INT'
+    )
     db_connection.close()
