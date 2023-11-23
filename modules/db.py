@@ -88,15 +88,3 @@ class DatabaseConnection:
                 print(f"Coluna '{column_name}' excluída da tabela '{table_name}'.")
         except Exception as e:
             print(f"Erro ao excluir a coluna: {e}")
-
-if __name__ == "__main__":
-    
-
-    db_connection = DatabaseConnection()
-    db_connection.connect()
-    db_connection.alter_table(
-        table_name='ltv',
-        new_column_name='cliente',
-        new_column_datatype='INT'
-    )
-    db_connection.close()
