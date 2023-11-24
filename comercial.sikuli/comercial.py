@@ -116,7 +116,7 @@ type("v", Key.CTRL)
 sleep(1)
 while exists("1696876316980.png"):
     click("1696876330645.png")
-click(Pattern("1700654065546.png").similar(0.92).targetOffset(294,-5))
+click(Pattern("1700834214962.png").similar(0.93).targetOffset(292,0))
 click("1696276781684.png")
 click(Pattern("1696276804309.png").targetOffset(244,-4))
 click(Pattern("1696276827112.png").similar(0.88).targetOffset(-45,0))

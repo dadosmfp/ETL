@@ -59,13 +59,12 @@ class Authenticator:
             
             '''   -------- WEBDRIVER --------  '''
             # Crie o serviço do ChromeDriver usando o ChromeDriverManager.
-            chrome_driver_service = ChromeService(ChromeDriverManager().install())
+            chrome_driver_service = ChromeService(ChromeDriverManager().install(), log_path="chromedriver.log")
             # Defina o caminho completo para o diretório de perfil do usuário.
             user_profile_dir = os.path.join(os.getcwd(), self.CHROME_PROFILE_PATH)
             # Crie uma instância do driver do Chrome e configure o perfil do usuário.
             options = Options()
             options.add_argument(f"--user-data-dir={user_profile_dir}")
-            options.add_argument("--no-sandbox")
             driver = webdriver.Chrome(service=chrome_driver_service, options=options)
             driver.get(auth_url)
             wait = WebDriverWait(driver, 10)

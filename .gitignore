@@ -1,10 +1,17 @@
 # Ignorar o diretório __pycache__
 __pycache__/
 
+# Ignorar arquivos .pyc em qualquer lugar
+*.pyc
+
 # Ignorar o diretório venv (ambiente virtual Python)
 venv/
 
 # Ignorar o diretório 117
 117/
 
+#ignorar config
 config/
+
+#ignorar .vscode
+.vscode

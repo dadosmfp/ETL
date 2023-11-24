@@ -1,555 +1,163 @@
-2023-11-17 09:11:00,951 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"' returned non-zero exit status 1.
-2023-11-17 09:11:09,767 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"' returned non-zero exit status 1.
-2023-11-17 09:11:24,305 [ERROR]: Erro na autenticação: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
-Stacktrace:
-	GetHandleVerifier [0x00AE72A3+45731]
-	(No symbol) [0x00A72D51]
-	(No symbol) [0x0096880D]
-	(No symbol) [0x0094F75E]
-	(No symbol) [0x009BC11B]
-	(No symbol) [0x009CB2D3]
-	(No symbol) [0x009B7DD6]
-	(No symbol) [0x009931F6]
-	(No symbol) [0x0099439D]
-	GetHandleVerifier [0x00DF0716+3229462]
-	GetHandleVerifier [0x00E384C8+3523784]
-	GetHandleVerifier [0x00E3214C+3498316]
-	GetHandleVerifier [0x00B71680+611968]
-	(No symbol) [0x00A7CCCC]
-	(No symbol) [0x00A78DF8]
-	(No symbol) [0x00A78F1D]
-	(No symbol) [0x00A6B2C7]
-	BaseThreadInitThunk [0x77ABFA29+25]
-	RtlGetAppContainerNamedObjectPath [0x77E87B5E+286]
-	RtlGetAppContainerNamedObjectPath [0x77E87B2E+238]
-
-2023-11-17 09:35:09,007 [INFO]: O comando Java foi executado com sucesso.
-2023-11-17 09:54:46,576 [INFO]: O comando Java foi executado com sucesso.
-2023-11-17 09:55:03,425 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-17 09:55:05,556 [ERROR]: Erro na autenticação: list index out of range
-2023-11-17 10:00:54,060 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-17 10:01:00,695 [INFO]: Iniciado Receita DRE
-2023-11-17 10:01:10,695 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-17 10:01:10,695 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:02:02,607 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-17 10:02:09,180 [INFO]: Iniciado Receita DRE
-2023-11-17 10:02:19,181 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-17 10:02:19,181 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:02:19,260 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:02:19,260 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:02:19,526 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:02:19,526 [INFO]: Iniciado Despesa DRE
-2023-11-17 10:02:29,538 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
-2023-11-17 10:02:29,538 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:02:30,664 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:02:30,664 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:02:32,070 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:02:32,086 [INFO]: Iniciado Bordero DRE
-2023-11-17 10:02:42,090 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
-2023-11-17 10:02:42,090 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:02:42,101 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:02:42,117 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:02:42,117 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:02:43,123 [INFO]: Iniciado Receita DRE
-2023-11-17 10:02:53,132 [INFO]: Selecionando o arquivo Excel: receitatop.xls
-2023-11-17 10:02:53,132 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:02:53,180 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:02:53,180 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:02:53,445 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:02:53,445 [INFO]: Iniciado Despesa DRE
-2023-11-17 10:03:03,457 [INFO]: Selecionando o arquivo Excel: despesatop.xls
-2023-11-17 10:03:03,457 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:03:03,582 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:03:03,582 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:03:03,942 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:03:03,942 [INFO]: Iniciado Bordero DRE
-2023-11-17 10:03:13,949 [INFO]: Selecionando o arquivo Excel: borderotop.xls
-2023-11-17 10:03:13,949 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:03:13,949 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:03:13,949 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:03:13,949 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:05:55,545 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-17 10:06:02,248 [INFO]: Iniciado Receita DRE
-2023-11-17 10:06:12,250 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-17 10:06:12,250 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:06:12,328 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:06:12,328 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:06:12,625 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:06:12,625 [INFO]: Iniciado Despesa DRE
-2023-11-17 10:06:22,628 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
-2023-11-17 10:06:22,628 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:06:23,779 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:06:23,779 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:06:25,623 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:06:25,623 [INFO]: Iniciado Bordero DRE
-2023-11-17 10:06:35,632 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
-2023-11-17 10:06:35,632 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:06:35,648 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:06:35,648 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:06:35,648 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:06:36,664 [INFO]: Iniciado Receita DRE
-2023-11-17 10:06:46,673 [INFO]: Selecionando o arquivo Excel: receitatop.xls
-2023-11-17 10:06:46,673 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:06:46,720 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:06:46,720 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:06:47,001 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:06:47,001 [INFO]: Iniciado Despesa DRE
-2023-11-17 10:06:57,004 [INFO]: Selecionando o arquivo Excel: despesatop.xls
-2023-11-17 10:06:57,004 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:06:57,130 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:06:57,130 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:06:57,504 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:06:57,504 [INFO]: Iniciado Bordero DRE
-2023-11-17 10:07:07,518 [INFO]: Selecionando o arquivo Excel: borderotop.xls
-2023-11-17 10:07:07,518 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:07:07,518 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:07:07,518 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:07:07,518 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:07:21,827 [INFO]: Arquivo renomeado para "base16112023.xlsx" com sucesso.
-2023-11-17 10:07:22,905 [ERROR]: Erro ao mover o arquivo. Código de status: 400
-2023-11-17 10:07:24,639 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
-2023-11-17 10:09:39,752 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
-2023-11-17 10:09:49,763 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-17 10:34:01,670 [INFO]: O comando Java foi executado com sucesso.
-2023-11-17 10:53:44,641 [INFO]: O comando Java foi executado com sucesso.
-2023-11-17 10:54:04,079 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-17 10:54:10,668 [INFO]: Iniciado Receita DRE
-2023-11-17 10:54:20,669 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-17 10:54:20,669 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:54:20,748 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:54:20,748 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:54:21,013 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:54:21,013 [INFO]: Iniciado Despesa DRE
-2023-11-17 10:54:31,028 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
-2023-11-17 10:54:31,028 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:54:32,154 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:54:32,154 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:54:33,575 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:54:33,575 [INFO]: Iniciado Bordero DRE
-2023-11-17 10:54:43,579 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
-2023-11-17 10:54:43,579 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:54:43,594 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:54:43,594 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:54:43,594 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:54:44,611 [INFO]: Iniciado Receita DRE
-2023-11-17 10:54:54,620 [INFO]: Selecionando o arquivo Excel: receitatop.xls
-2023-11-17 10:54:54,620 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:54:54,667 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:54:54,667 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:54:54,917 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:54:54,917 [INFO]: Iniciado Despesa DRE
-2023-11-17 10:55:04,934 [INFO]: Selecionando o arquivo Excel: despesatop.xls
-2023-11-17 10:55:04,934 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:55:05,060 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:55:05,060 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:55:05,403 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:55:05,403 [INFO]: Iniciado Bordero DRE
-2023-11-17 10:55:15,418 [INFO]: Selecionando o arquivo Excel: borderotop.xls
-2023-11-17 10:55:15,418 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:55:15,418 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:55:15,418 [INFO]: Iniciando transformação dos dados...
-2023-11-17 10:55:15,418 [INFO]: Transformação dos dados concluída.
-2023-11-17 10:55:29,716 [ERROR]: Erro ao renomear o arquivo. Código de status: 409
-2023-11-17 10:55:30,732 [ERROR]: Erro ao mover o arquivo. Código de status: 400
-2023-11-17 10:55:33,263 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
-2023-11-17 10:57:52,353 [INFO]: O comando Java foi executado com sucesso.
-2023-11-17 10:58:02,356 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-17 10:58:02,356 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:58:02,388 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:58:12,402 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-17 10:58:12,402 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:58:12,450 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:58:22,453 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-17 10:58:22,453 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 10:58:22,516 [INFO]: Dados extraídos com sucesso.
-2023-11-17 10:58:25,672 [INFO]: Processo de ETL concluído para DRE
-2023-11-17 11:03:30,898 [INFO]: O comando Java foi executado com sucesso.
-2023-11-17 11:03:40,902 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-17 11:03:40,902 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 11:03:40,934 [INFO]: Dados extraídos com sucesso.
-2023-11-17 11:03:50,945 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-17 11:03:50,945 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 11:03:50,992 [INFO]: Dados extraídos com sucesso.
-2023-11-17 11:04:00,998 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-17 11:04:00,998 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-17 11:04:01,061 [INFO]: Dados extraídos com sucesso.
-2023-11-17 11:04:06,030 [INFO]: Processo de ETL concluído para DRE
-2023-11-20 07:48:32,685 [INFO]: O comando Java foi executado com sucesso.
-2023-11-20 07:48:42,703 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-20 07:48:42,703 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 07:48:42,750 [INFO]: Dados extraídos com sucesso.
-2023-11-20 07:48:52,763 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-20 07:48:52,763 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 07:48:52,810 [INFO]: Dados extraídos com sucesso.
-2023-11-20 07:49:02,816 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-20 07:49:02,816 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 07:49:02,879 [INFO]: Dados extraídos com sucesso.
-2023-11-20 07:49:08,113 [INFO]: Processo de ETL concluído para DRE
-2023-11-20 08:18:46,445 [INFO]: O comando Java foi executado com sucesso.
-2023-11-20 08:38:26,805 [INFO]: O comando Java foi executado com sucesso.
-2023-11-20 08:38:49,222 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-20 08:38:56,076 [INFO]: Iniciado Receita DRE
-2023-11-20 08:39:06,077 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-20 08:39:06,077 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 08:39:06,171 [INFO]: Dados extraídos com sucesso.
-2023-11-20 08:39:06,171 [INFO]: Iniciando transformação dos dados...
-2023-11-20 08:39:06,482 [INFO]: Transformação dos dados concluída.
-2023-11-20 08:39:06,482 [INFO]: Iniciado Despesa DRE
-2023-11-20 08:39:16,484 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
-2023-11-20 08:39:16,484 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 08:39:17,703 [INFO]: Dados extraídos com sucesso.
-2023-11-20 08:39:17,703 [INFO]: Iniciando transformação dos dados...
-2023-11-20 08:39:19,173 [INFO]: Transformação dos dados concluída.
-2023-11-20 08:39:19,173 [INFO]: Iniciado Bordero DRE
-2023-11-20 08:39:29,186 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
-2023-11-20 08:39:29,186 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 08:39:29,202 [INFO]: Dados extraídos com sucesso.
-2023-11-20 08:39:29,202 [INFO]: Iniciando transformação dos dados...
-2023-11-20 08:39:29,202 [INFO]: Transformação dos dados concluída.
-2023-11-20 08:39:30,218 [INFO]: Iniciado Receita DRE
-2023-11-20 08:39:40,229 [INFO]: Selecionando o arquivo Excel: receitatop.xls
-2023-11-20 08:39:40,229 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 08:39:40,276 [INFO]: Dados extraídos com sucesso.
-2023-11-20 08:39:40,276 [INFO]: Iniciando transformação dos dados...
-2023-11-20 08:39:40,541 [INFO]: Transformação dos dados concluída.
-2023-11-20 08:39:40,541 [INFO]: Iniciado Despesa DRE
-2023-11-20 08:39:50,551 [INFO]: Selecionando o arquivo Excel: despesatop.xls
-2023-11-20 08:39:50,551 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 08:39:50,676 [INFO]: Dados extraídos com sucesso.
-2023-11-20 08:39:50,676 [INFO]: Iniciando transformação dos dados...
-2023-11-20 08:39:51,020 [INFO]: Transformação dos dados concluída.
-2023-11-20 08:39:51,020 [INFO]: Iniciado Bordero DRE
-2023-11-20 08:40:01,030 [INFO]: Selecionando o arquivo Excel: borderotop.xls
-2023-11-20 08:40:01,030 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 08:40:01,030 [INFO]: Dados extraídos com sucesso.
-2023-11-20 08:40:01,030 [INFO]: Iniciando transformação dos dados...
-2023-11-20 08:40:01,030 [INFO]: Transformação dos dados concluída.
-2023-11-20 08:40:15,782 [INFO]: Arquivo renomeado para "base19112023.xlsx" com sucesso.
-2023-11-20 08:40:16,859 [ERROR]: Erro ao mover o arquivo. Código de status: 400
-2023-11-20 08:40:19,469 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
-2023-11-20 08:42:35,929 [INFO]: O comando Java foi executado com sucesso.
-2023-11-20 08:42:45,933 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-20 08:42:45,933 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 08:42:45,968 [INFO]: Dados extraídos com sucesso.
-2023-11-20 08:42:55,977 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-20 08:42:55,977 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 08:42:56,024 [INFO]: Dados extraídos com sucesso.
-2023-11-20 08:43:06,030 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-20 08:43:06,030 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-20 08:43:06,093 [INFO]: Dados extraídos com sucesso.
-2023-11-20 08:43:10,843 [INFO]: Processo de ETL concluído para DRE
-2023-11-22 08:27:21,274 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
-2023-11-22 08:27:31,280 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 08:30:08,755 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
-2023-11-22 08:30:18,766 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 08:30:18,766 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:30:18,805 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:30:28,812 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-22 08:30:28,812 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:30:28,862 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:30:38,866 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-22 08:30:38,866 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:30:38,935 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:30:43,671 [INFO]: Processo de ETL concluído para DRE
-2023-11-22 08:37:23,606 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
-2023-11-22 08:41:12,443 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
-2023-11-22 08:41:22,456 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 08:41:22,456 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:41:22,494 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:41:32,505 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-22 08:41:32,505 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:41:32,554 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:41:42,559 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-22 08:41:42,559 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:41:42,628 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:41:47,577 [INFO]: Processo de ETL concluído para DRE
-2023-11-22 08:46:33,296 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
-2023-11-22 08:46:43,312 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 08:50:49,234 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
-2023-11-22 08:50:59,249 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 08:50:59,249 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:50:59,298 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:51:09,315 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-22 08:51:09,315 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:51:09,364 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:51:19,380 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-22 08:53:46,644 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
-2023-11-22 08:57:25,593 [INFO]: O comando Java foi executado com sucesso.
-2023-11-22 08:57:35,597 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 08:57:35,597 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:57:35,630 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:57:45,642 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-22 08:57:45,642 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:57:45,690 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:57:55,696 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-22 08:57:55,696 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 08:57:55,759 [INFO]: Dados extraídos com sucesso.
-2023-11-22 08:58:10,025 [INFO]: Processo de ETL concluído para DRE
-2023-11-22 10:11:34,259 [INFO]: O comando Java foi executado com sucesso.
-2023-11-22 10:11:44,263 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 10:11:44,263 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 10:11:44,310 [INFO]: Dados extraídos com sucesso.
-2023-11-22 10:11:54,312 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-22 10:11:54,312 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 10:11:54,359 [INFO]: Dados extraídos com sucesso.
-2023-11-22 10:12:04,369 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-22 10:12:04,369 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 10:12:04,416 [INFO]: Dados extraídos com sucesso.
-2023-11-22 10:12:17,482 [INFO]: Processo de ETL concluído para DRE
-2023-11-22 10:20:31,712 [INFO]: O comando Java foi executado com sucesso.
-2023-11-22 10:20:41,716 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 10:20:41,716 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 10:20:41,748 [INFO]: Dados extraídos com sucesso.
-2023-11-22 10:20:51,760 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-22 10:20:51,760 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 10:20:51,807 [INFO]: Dados extraídos com sucesso.
-2023-11-22 10:21:01,812 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-22 10:21:01,812 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 10:21:01,891 [INFO]: Dados extraídos com sucesso.
-2023-11-22 10:21:17,670 [INFO]: Processo de ETL concluído para DRE
-2023-11-22 11:03:20,298 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"' returned non-zero exit status 1.
-2023-11-22 11:22:58,588 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"' returned non-zero exit status 1.
-2023-11-22 11:23:29,020 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-22 11:23:35,676 [INFO]: Iniciado Receita DRE
-2023-11-22 11:23:45,677 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-22 11:23:45,677 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 11:23:45,775 [INFO]: Dados extraídos com sucesso.
-2023-11-22 11:23:45,775 [INFO]: Iniciando transformação dos dados...
-2023-11-22 11:23:46,048 [INFO]: Transformação dos dados concluída.
-2023-11-22 11:23:46,048 [INFO]: Iniciado Despesa DRE
-2023-11-22 11:23:56,060 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
-2023-11-22 11:23:56,060 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 11:23:57,249 [INFO]: Dados extraídos com sucesso.
-2023-11-22 11:23:57,249 [INFO]: Iniciando transformação dos dados...
-2023-11-22 11:23:58,705 [INFO]: Transformação dos dados concluída.
-2023-11-22 11:23:58,705 [INFO]: Iniciado Bordero DRE
-2023-11-22 11:24:08,710 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
-2023-11-22 11:24:08,710 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 11:24:08,730 [INFO]: Dados extraídos com sucesso.
-2023-11-22 11:24:08,730 [INFO]: Iniciando transformação dos dados...
-2023-11-22 11:24:08,739 [INFO]: Transformação dos dados concluída.
-2023-11-22 11:24:09,758 [INFO]: Iniciado Receita DRE
-2023-11-22 11:24:19,760 [INFO]: Selecionando o arquivo Excel: receitatop.xls
-2023-11-22 11:24:19,760 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 11:24:19,809 [INFO]: Dados extraídos com sucesso.
-2023-11-22 11:24:19,809 [INFO]: Iniciando transformação dos dados...
-2023-11-22 11:24:20,081 [INFO]: Transformação dos dados concluída.
-2023-11-22 11:24:20,081 [INFO]: Iniciado Despesa DRE
-2023-11-22 11:24:30,088 [INFO]: Selecionando o arquivo Excel: despesatop.xls
-2023-11-22 11:24:30,088 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 11:24:30,215 [INFO]: Dados extraídos com sucesso.
-2023-11-22 11:24:30,215 [INFO]: Iniciando transformação dos dados...
-2023-11-22 11:24:30,558 [INFO]: Transformação dos dados concluída.
-2023-11-22 11:24:30,558 [INFO]: Iniciado Bordero DRE
-2023-11-22 11:24:40,572 [INFO]: Selecionando o arquivo Excel: borderotop.xls
-2023-11-22 11:24:40,572 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 11:24:40,582 [INFO]: Dados extraídos com sucesso.
-2023-11-22 11:24:40,582 [INFO]: Iniciando transformação dos dados...
-2023-11-22 11:24:40,582 [INFO]: Transformação dos dados concluída.
-2023-11-22 11:24:55,194 [INFO]: Arquivo renomeado para "base21112023.xlsx" com sucesso.
-2023-11-22 11:24:56,369 [ERROR]: Erro ao mover o arquivo. Código de status: 400
-2023-11-22 11:25:01,020 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
-2023-11-22 11:27:22,600 [INFO]: O comando Java foi executado com sucesso.
-2023-11-22 11:27:32,605 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 11:27:32,605 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 11:27:32,636 [INFO]: Dados extraídos com sucesso.
-2023-11-22 11:27:42,647 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-22 11:27:42,647 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 11:27:42,695 [INFO]: Dados extraídos com sucesso.
-2023-11-22 11:27:52,699 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-22 11:27:52,699 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 11:27:52,778 [INFO]: Dados extraídos com sucesso.
-2023-11-22 11:28:08,450 [INFO]: Processo de ETL concluído para DRE
-2023-11-22 11:53:37,772 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"' returned non-zero exit status 1.
-2023-11-22 12:13:20,395 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"' returned non-zero exit status 1.
-2023-11-22 12:13:38,932 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-22 12:13:45,460 [INFO]: Iniciado Receita DRE
-2023-11-22 12:13:55,461 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-22 12:13:55,461 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 12:13:55,543 [INFO]: Dados extraídos com sucesso.
-2023-11-22 12:13:55,548 [INFO]: Iniciando transformação dos dados...
-2023-11-22 12:13:55,823 [INFO]: Transformação dos dados concluída.
-2023-11-22 12:13:55,831 [INFO]: Iniciado Despesa DRE
-2023-11-22 12:14:05,831 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
-2023-11-22 12:14:05,831 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 12:14:07,038 [INFO]: Dados extraídos com sucesso.
-2023-11-22 12:14:07,038 [INFO]: Iniciando transformação dos dados...
-2023-11-22 12:14:08,543 [INFO]: Transformação dos dados concluída.
-2023-11-22 12:14:08,543 [INFO]: Iniciado Bordero DRE
-2023-11-22 12:14:18,549 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
-2023-11-22 12:14:18,549 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 12:14:18,569 [INFO]: Dados extraídos com sucesso.
-2023-11-22 12:14:18,569 [INFO]: Iniciando transformação dos dados...
-2023-11-22 12:14:18,579 [INFO]: Transformação dos dados concluída.
-2023-11-22 12:14:19,586 [INFO]: Iniciado Receita DRE
-2023-11-22 12:14:29,597 [INFO]: Selecionando o arquivo Excel: receitatop.xls
-2023-11-22 12:14:29,597 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 12:14:29,656 [INFO]: Dados extraídos com sucesso.
-2023-11-22 12:14:29,656 [INFO]: Iniciando transformação dos dados...
-2023-11-22 12:14:29,920 [INFO]: Transformação dos dados concluída.
-2023-11-22 12:14:29,920 [INFO]: Iniciado Despesa DRE
-2023-11-22 12:14:39,928 [INFO]: Selecionando o arquivo Excel: despesatop.xls
-2023-11-22 12:14:39,928 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 12:14:40,055 [INFO]: Dados extraídos com sucesso.
-2023-11-22 12:14:40,055 [INFO]: Iniciando transformação dos dados...
-2023-11-22 12:14:40,408 [INFO]: Transformação dos dados concluída.
-2023-11-22 12:14:40,408 [INFO]: Iniciado Bordero DRE
-2023-11-22 12:14:50,421 [INFO]: Selecionando o arquivo Excel: borderotop.xls
-2023-11-22 12:14:50,421 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 12:14:50,431 [INFO]: Dados extraídos com sucesso.
-2023-11-22 12:14:50,431 [INFO]: Iniciando transformação dos dados...
-2023-11-22 12:14:50,431 [INFO]: Transformação dos dados concluída.
-2023-11-22 12:15:06,276 [ERROR]: Erro ao renomear o arquivo. Código de status: 409
-2023-11-22 12:15:07,393 [ERROR]: Erro ao mover o arquivo. Código de status: 400
-2023-11-22 12:15:09,941 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
-2023-11-22 12:17:27,559 [INFO]: O comando Java foi executado com sucesso.
-2023-11-22 12:17:37,563 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 12:17:37,563 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 12:17:37,594 [INFO]: Dados extraídos com sucesso.
-2023-11-22 12:17:47,607 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-22 12:17:47,607 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 12:17:47,654 [INFO]: Dados extraídos com sucesso.
-2023-11-22 12:17:57,662 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-22 12:17:57,662 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 12:17:57,740 [INFO]: Dados extraídos com sucesso.
-2023-11-22 12:18:12,741 [INFO]: Processo de ETL concluído para DRE
-2023-11-22 13:42:11,116 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"' returned non-zero exit status 1.
-2023-11-22 13:42:19,932 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"' returned non-zero exit status 1.
-2023-11-22 13:42:38,913 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-22 13:42:45,608 [INFO]: Iniciado Receita DRE
-2023-11-22 13:42:55,609 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-22 13:49:12,101 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"' returned non-zero exit status 1.
-2023-11-22 13:49:20,933 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"' returned non-zero exit status 1.
-2023-11-22 13:49:32,592 [ERROR]: Erro na autenticação: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=119.0.6045.160)
-Stacktrace:
-	GetHandleVerifier [0x00EB72A3+45731]
-	(No symbol) [0x00E42D51]
-	(No symbol) [0x00D3880D]
-	(No symbol) [0x00D1F75E]
-	(No symbol) [0x00D8C11B]
-	(No symbol) [0x00D9B2D3]
-	(No symbol) [0x00D87DD6]
-	(No symbol) [0x00D631F6]
-	(No symbol) [0x00D6439D]
-	GetHandleVerifier [0x011C0716+3229462]
-	GetHandleVerifier [0x012084C8+3523784]
-	GetHandleVerifier [0x0120214C+3498316]
-	GetHandleVerifier [0x00F41680+611968]
-	(No symbol) [0x00E4CCCC]
-	(No symbol) [0x00E48DF8]
-	(No symbol) [0x00E48F1D]
-	(No symbol) [0x00E3B2C7]
-	BaseThreadInitThunk [0x74F1FA29+25]
-	RtlGetAppContainerNamedObjectPath [0x76EE7B5E+286]
-	RtlGetAppContainerNamedObjectPath [0x76EE7B2E+238]
-
-2023-11-22 14:12:00,124 [INFO]: O comando Java foi executado com sucesso.
-2023-11-22 14:31:45,997 [INFO]: O comando Java foi executado com sucesso.
-2023-11-22 14:32:04,576 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-22 14:32:11,227 [INFO]: Iniciado Receita DRE
-2023-11-22 14:32:21,228 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-22 14:32:21,228 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 14:32:21,322 [INFO]: Dados extraídos com sucesso.
-2023-11-22 14:32:21,322 [INFO]: Iniciando transformação dos dados...
-2023-11-22 14:32:21,603 [INFO]: Transformação dos dados concluída.
-2023-11-22 14:32:21,603 [INFO]: Iniciado Despesa DRE
-2023-11-22 14:32:31,608 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
-2023-11-22 14:32:31,608 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 14:32:32,858 [INFO]: Dados extraídos com sucesso.
-2023-11-22 14:32:32,858 [INFO]: Iniciando transformação dos dados...
-2023-11-22 14:32:34,389 [INFO]: Transformação dos dados concluída.
-2023-11-22 14:32:34,389 [INFO]: Iniciado Bordero DRE
-2023-11-22 14:32:44,400 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
-2023-11-22 14:32:44,400 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 14:32:44,416 [INFO]: Dados extraídos com sucesso.
-2023-11-22 14:32:44,416 [INFO]: Iniciando transformação dos dados...
-2023-11-22 14:32:44,432 [INFO]: Transformação dos dados concluída.
-2023-11-22 14:32:45,436 [INFO]: Iniciado Receita DRE
-2023-11-22 14:32:55,444 [INFO]: Selecionando o arquivo Excel: receitatop.xls
-2023-11-22 14:32:55,444 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 14:32:55,492 [INFO]: Dados extraídos com sucesso.
-2023-11-22 14:32:55,492 [INFO]: Iniciando transformação dos dados...
-2023-11-22 14:32:55,758 [INFO]: Transformação dos dados concluída.
-2023-11-22 14:32:55,758 [INFO]: Iniciado Despesa DRE
-2023-11-22 14:33:05,767 [INFO]: Selecionando o arquivo Excel: despesatop.xls
-2023-11-22 14:33:05,767 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 14:33:05,893 [INFO]: Dados extraídos com sucesso.
-2023-11-22 14:33:05,893 [INFO]: Iniciando transformação dos dados...
-2023-11-22 14:33:06,346 [INFO]: Transformação dos dados concluída.
-2023-11-22 14:33:06,346 [INFO]: Iniciado Bordero DRE
-2023-11-22 14:33:16,361 [INFO]: Selecionando o arquivo Excel: borderotop.xls
-2023-11-22 14:33:16,361 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 14:33:16,361 [INFO]: Dados extraídos com sucesso.
-2023-11-22 14:33:16,361 [INFO]: Iniciando transformação dos dados...
-2023-11-22 14:33:16,377 [INFO]: Transformação dos dados concluída.
-2023-11-22 14:33:31,582 [ERROR]: Erro ao renomear o arquivo. Código de status: 409
-2023-11-22 14:33:32,897 [ERROR]: Erro ao mover o arquivo. Código de status: 400
-2023-11-22 14:33:35,035 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
-2023-11-22 14:35:52,812 [INFO]: O comando Java foi executado com sucesso.
-2023-11-22 14:36:02,815 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-22 14:36:02,815 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 14:36:02,847 [INFO]: Dados extraídos com sucesso.
-2023-11-22 14:36:12,859 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-22 14:36:12,859 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 14:36:12,906 [INFO]: Dados extraídos com sucesso.
-2023-11-22 14:36:22,912 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-22 14:36:22,912 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-22 14:36:22,990 [INFO]: Dados extraídos com sucesso.
-2023-11-22 14:36:37,865 [INFO]: Processo de ETL concluído para DRE
-2023-11-23 08:22:07,725 [INFO]: O comando Java foi executado com sucesso.
-2023-11-23 08:41:48,784 [INFO]: O comando Java foi executado com sucesso.
-2023-11-23 08:42:10,357 [INFO]: O botão não foi encontrado ou não está visível
-2023-11-23 08:42:16,834 [INFO]: Iniciado Receita DRE
-2023-11-23 08:42:26,836 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
-2023-11-23 08:42:26,836 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-23 08:42:26,915 [INFO]: Dados extraídos com sucesso.
-2023-11-23 08:42:26,915 [INFO]: Iniciando transformação dos dados...
-2023-11-23 08:42:27,196 [INFO]: Transformação dos dados concluída.
-2023-11-23 08:42:27,196 [INFO]: Iniciado Despesa DRE
-2023-11-23 08:42:37,211 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
-2023-11-23 08:42:37,211 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-23 08:42:38,492 [INFO]: Dados extraídos com sucesso.
-2023-11-23 08:42:38,492 [INFO]: Iniciando transformação dos dados...
-2023-11-23 08:42:40,086 [INFO]: Transformação dos dados concluída.
-2023-11-23 08:42:40,086 [INFO]: Iniciado Bordero DRE
-2023-11-23 08:42:50,089 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
-2023-11-23 08:42:50,089 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-23 08:42:50,105 [INFO]: Dados extraídos com sucesso.
-2023-11-23 08:42:50,105 [INFO]: Iniciando transformação dos dados...
-2023-11-23 08:42:50,121 [INFO]: Transformação dos dados concluída.
-2023-11-23 08:42:51,122 [INFO]: Iniciado Receita DRE
-2023-11-23 08:43:01,131 [INFO]: Selecionando o arquivo Excel: receitatop.xls
-2023-11-23 08:43:01,131 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-23 08:43:01,178 [INFO]: Dados extraídos com sucesso.
-2023-11-23 08:43:01,178 [INFO]: Iniciando transformação dos dados...
-2023-11-23 08:43:01,444 [INFO]: Transformação dos dados concluída.
-2023-11-23 08:43:01,444 [INFO]: Iniciado Despesa DRE
-2023-11-23 08:43:11,448 [INFO]: Selecionando o arquivo Excel: despesatop.xls
-2023-11-23 08:43:11,448 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-23 08:43:11,574 [INFO]: Dados extraídos com sucesso.
-2023-11-23 08:43:11,574 [INFO]: Iniciando transformação dos dados...
-2023-11-23 08:43:11,918 [INFO]: Transformação dos dados concluída.
-2023-11-23 08:43:11,918 [INFO]: Iniciado Bordero DRE
-2023-11-23 08:43:21,935 [INFO]: Selecionando o arquivo Excel: borderotop.xls
-2023-11-23 08:43:21,935 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-23 08:43:21,935 [INFO]: Dados extraídos com sucesso.
-2023-11-23 08:43:21,935 [INFO]: Iniciando transformação dos dados...
-2023-11-23 08:43:21,935 [INFO]: Transformação dos dados concluída.
-2023-11-23 08:43:36,483 [INFO]: Arquivo renomeado para "base22112023.xlsx" com sucesso.
-2023-11-23 08:43:38,124 [ERROR]: Erro ao mover o arquivo. Código de status: 400
-2023-11-23 08:43:39,920 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
-2023-11-23 08:45:57,877 [INFO]: O comando Java foi executado com sucesso.
-2023-11-23 08:46:07,882 [INFO]: Selecionando o arquivo Excel: clientes.txt
-2023-11-23 08:46:07,882 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-23 08:46:07,914 [INFO]: Dados extraídos com sucesso.
-2023-11-23 08:46:17,928 [INFO]: Selecionando o arquivo Excel: pedidos.txt
-2023-11-23 08:46:17,928 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-23 08:46:17,976 [INFO]: Dados extraídos com sucesso.
-2023-11-23 08:46:27,983 [INFO]: Selecionando o arquivo Excel: ltv.txt
-2023-11-23 08:46:27,983 [INFO]: Extraindo os dados do arquivo selecionado...
-2023-11-23 08:46:28,062 [INFO]: Dados extraídos com sucesso.
-2023-11-23 08:46:43,468 [INFO]: Processo de ETL concluído para DRE
+2023-11-23 17:39:11,382 [INFO]: O comando Java foi executado com sucesso.
+2023-11-23 17:58:41,987 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"' returned non-zero exit status 1.
+2023-11-23 18:20:33,950 [INFO]: O comando Java foi executado com sucesso.
+2023-11-23 18:40:11,192 [INFO]: O comando Java foi executado com sucesso.
+2023-11-23 18:40:30,886 [INFO]: O botão não foi encontrado ou não está visível
+2023-11-23 18:40:38,260 [INFO]: Iniciado Receita DRE
+2023-11-23 18:40:48,262 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
+2023-11-23 18:40:48,262 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-23 18:40:48,361 [INFO]: Dados extraídos com sucesso.
+2023-11-23 18:40:48,362 [INFO]: Iniciando transformação dos dados...
+2023-11-23 18:40:48,664 [INFO]: Transformação dos dados concluída.
+2023-11-23 18:40:48,664 [INFO]: Iniciado Despesa DRE
+2023-11-23 18:40:58,667 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
+2023-11-23 18:40:58,667 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-23 18:40:59,821 [INFO]: Dados extraídos com sucesso.
+2023-11-23 18:40:59,821 [INFO]: Iniciando transformação dos dados...
+2023-11-23 18:41:01,315 [INFO]: Transformação dos dados concluída.
+2023-11-23 18:41:01,316 [INFO]: Iniciado Bordero DRE
+2023-11-23 18:41:11,318 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
+2023-11-23 18:41:11,318 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-23 18:41:11,345 [INFO]: Dados extraídos com sucesso.
+2023-11-23 18:41:11,346 [INFO]: Iniciando transformação dos dados...
+2023-11-23 18:41:11,350 [INFO]: Transformação dos dados concluída.
+2023-11-23 18:41:12,352 [INFO]: Iniciado Receita DRE
+2023-11-23 18:41:22,361 [INFO]: Selecionando o arquivo Excel: receitatop.xls
+2023-11-23 18:41:22,361 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-23 18:41:22,429 [INFO]: Dados extraídos com sucesso.
+2023-11-23 18:41:22,429 [INFO]: Iniciando transformação dos dados...
+2023-11-23 18:41:22,696 [INFO]: Transformação dos dados concluída.
+2023-11-23 18:41:22,696 [INFO]: Iniciado Despesa DRE
+2023-11-23 18:41:32,698 [INFO]: Selecionando o arquivo Excel: despesatop.xls
+2023-11-23 18:41:32,698 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-23 18:41:32,833 [INFO]: Dados extraídos com sucesso.
+2023-11-23 18:41:32,833 [INFO]: Iniciando transformação dos dados...
+2023-11-23 18:41:33,181 [INFO]: Transformação dos dados concluída.
+2023-11-23 18:41:33,181 [INFO]: Iniciado Bordero DRE
+2023-11-23 18:41:43,186 [INFO]: Selecionando o arquivo Excel: borderotop.xls
+2023-11-23 18:41:43,186 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-23 18:41:43,186 [INFO]: Dados extraídos com sucesso.
+2023-11-23 18:41:43,186 [INFO]: Iniciando transformação dos dados...
+2023-11-23 18:41:43,201 [INFO]: Transformação dos dados concluída.
+2023-11-23 18:41:57,604 [ERROR]: Erro ao renomear o arquivo. Código de status: 409
+2023-11-23 18:41:58,721 [ERROR]: Erro ao mover o arquivo. Código de status: 400
+2023-11-23 18:42:01,026 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
+2023-11-23 18:44:17,744 [INFO]: O comando Java foi executado com sucesso.
+2023-11-23 18:44:27,746 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-11-23 18:44:27,746 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-23 18:44:27,790 [INFO]: Dados extraídos com sucesso.
+2023-11-23 18:44:37,791 [INFO]: Selecionando o arquivo Excel: pedidos.txt
+2023-11-23 18:44:37,791 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-23 18:44:37,845 [INFO]: Dados extraídos com sucesso.
+2023-11-23 18:44:47,846 [INFO]: Selecionando o arquivo Excel: ltv.txt
+2023-11-23 18:44:47,846 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-23 18:44:47,931 [INFO]: Dados extraídos com sucesso.
+2023-11-23 18:44:53,056 [INFO]: Processo de ETL concluído para DRE
+2023-11-24 09:43:55,916 [INFO]: O comando Java foi executado com sucesso.
+2023-11-24 10:03:34,574 [INFO]: O comando Java foi executado com sucesso.
+2023-11-24 10:03:57,488 [INFO]: O botão não foi encontrado ou não está visível
+2023-11-24 10:04:04,310 [INFO]: Iniciado Receita DRE
+2023-11-24 10:04:14,311 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
+2023-11-24 10:04:14,311 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:04:14,390 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:04:14,390 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:04:14,671 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:04:14,671 [INFO]: Iniciado Despesa DRE
+2023-11-24 10:04:24,685 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
+2023-11-24 10:04:24,685 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:04:25,857 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:04:25,857 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:04:27,311 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:04:27,311 [INFO]: Iniciado Bordero DRE
+2023-11-24 10:04:37,322 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
+2023-11-24 10:04:37,322 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:04:37,338 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:04:37,338 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:04:37,338 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:04:38,354 [INFO]: Iniciado Receita DRE
+2023-11-24 10:04:48,364 [INFO]: Selecionando o arquivo Excel: receitatop.xls
+2023-11-24 10:04:48,364 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:04:48,412 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:04:48,412 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:04:48,677 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:04:48,677 [INFO]: Iniciado Despesa DRE
+2023-11-24 10:04:58,680 [INFO]: Selecionando o arquivo Excel: despesatop.xls
+2023-11-24 10:04:58,680 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:04:58,806 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:04:58,806 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:04:59,149 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:04:59,149 [INFO]: Iniciado Bordero DRE
+2023-11-24 10:05:09,156 [INFO]: Selecionando o arquivo Excel: borderotop.xls
+2023-11-24 10:05:09,156 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:05:09,156 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:05:09,156 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:05:09,156 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:05:24,219 [INFO]: Arquivo renomeado para "base23112023.xlsx" com sucesso.
+2023-11-24 10:05:26,531 [ERROR]: Erro ao mover o arquivo. Código de status: 400
+2023-11-24 10:05:29,641 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
+2023-11-24 10:07:47,815 [INFO]: O comando Java foi executado com sucesso.
+2023-11-24 10:07:57,819 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-11-24 10:31:10,680 [INFO]: O comando Java foi executado com sucesso.
+2023-11-24 10:50:49,418 [INFO]: O comando Java foi executado com sucesso.
+2023-11-24 10:51:08,559 [INFO]: O botão não foi encontrado ou não está visível
+2023-11-24 10:51:15,194 [INFO]: Iniciado Receita DRE
+2023-11-24 10:51:25,195 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
+2023-11-24 10:51:25,195 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:51:25,274 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:51:25,274 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:51:25,539 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:51:25,539 [INFO]: Iniciado Despesa DRE
+2023-11-24 10:51:35,545 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
+2023-11-24 10:51:35,545 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:51:36,686 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:51:36,686 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:51:38,124 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:51:38,124 [INFO]: Iniciado Bordero DRE
+2023-11-24 10:51:48,138 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
+2023-11-24 10:51:48,138 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:51:48,153 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:51:48,153 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:51:48,153 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:51:49,170 [INFO]: Iniciado Receita DRE
+2023-11-24 10:51:59,178 [INFO]: Selecionando o arquivo Excel: receitatop.xls
+2023-11-24 10:51:59,178 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:51:59,227 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:51:59,227 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:51:59,476 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:51:59,476 [INFO]: Iniciado Despesa DRE
+2023-11-24 10:52:09,489 [INFO]: Selecionando o arquivo Excel: despesatop.xls
+2023-11-24 10:52:09,489 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:52:09,614 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:52:09,614 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:52:09,942 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:52:09,942 [INFO]: Iniciado Bordero DRE
+2023-11-24 10:52:19,956 [INFO]: Selecionando o arquivo Excel: borderotop.xls
+2023-11-24 10:52:19,956 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:52:19,956 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:52:19,956 [INFO]: Iniciando transformação dos dados...
+2023-11-24 10:52:19,956 [INFO]: Transformação dos dados concluída.
+2023-11-24 10:52:34,144 [ERROR]: Erro ao renomear o arquivo. Código de status: 409
+2023-11-24 10:52:35,426 [ERROR]: Erro ao mover o arquivo. Código de status: 400
+2023-11-24 10:52:38,473 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
+2023-11-24 10:54:55,496 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
+2023-11-24 10:55:05,498 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-11-24 10:55:05,498 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:55:05,538 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:55:15,544 [INFO]: Selecionando o arquivo Excel: pedidos.txt
+2023-11-24 10:55:15,544 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:55:15,593 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:55:25,603 [INFO]: Selecionando o arquivo Excel: ltv.txt
+2023-11-24 10:55:25,603 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 10:55:25,681 [INFO]: Dados extraídos com sucesso.
+2023-11-24 10:55:30,706 [INFO]: Processo de ETL concluído para DRE
+2023-11-24 11:05:41,540 [INFO]: O comando Java foi executado com sucesso.
+2023-11-24 11:05:51,542 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-11-24 11:05:51,542 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 11:05:51,573 [INFO]: Dados extraídos com sucesso.
+2023-11-24 11:06:01,585 [INFO]: Selecionando o arquivo Excel: pedidos.txt
+2023-11-24 11:06:01,585 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 11:06:01,633 [INFO]: Dados extraídos com sucesso.
+2023-11-24 11:06:11,638 [INFO]: Selecionando o arquivo Excel: ltv.txt
+2023-11-24 11:06:11,638 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-11-24 11:06:11,717 [INFO]: Dados extraídos com sucesso.
+2023-11-24 11:06:26,780 [INFO]: Processo de ETL concluído para DRE
