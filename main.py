@@ -10,6 +10,22 @@ from time import sleep
 class DreMacro:
     # ------------- RECEITA DRE -------------  
     def ReceitaDre(file, access_token):
+        """
+        Receives a file and an access token and performs the following steps:
+        
+        1. Logs the start of the function using the logger.info statement.
+        2. Creates an instance of the DataTransformerDre class.
+        3. Pauses the execution of the function for 10 seconds using the sleep function.
+        4. Initiates the data transformation by calling the GetData method of the data_transformer object with the file parameter.
+        5. Transforms the received data using the TransformData method of the data_transformer object with the 'Macrofrio' parameter.
+        
+        Parameters:
+        - file: A file object to be processed.
+        - access_token: An access token for authentication.
+        
+        Returns:
+        - receita_dre: The transformed data obtained from the data_transformer object.
+        """
         # Inclua a instrução logger.info para esta função
         logger.info(f'Iniciado Receita DRE')
         # Crie uma instância da classe DataTransformer_DRE
@@ -22,6 +38,15 @@ class DreMacro:
         
     # ------------- DESPESA DRE -------------  
     def DespesaDre(file, access_token):
+        """
+        This function takes in a file and an access token as parameters.
+        It initializes a logger and logs the start of the DespesaDre function.
+        Then it creates an instance of the DataTransformerDre class.
+        After a sleep of 10 seconds, it starts the data transformation process.
+        The transformed data is stored in the variable despesa_dre.
+        Finally, the transformed data is further processed using the TransformData method of the DataTransformerDre class.
+        The resulting transformed data is returned by the function.
+        """
         # Inclua a instrução logger.info para esta função
         logger.info(f'Iniciado Despesa DRE')
         # Crie uma instância da classe DataTransformer_DRE
@@ -34,6 +59,16 @@ class DreMacro:
 
     # ------------- BORDERO DRE ------------- 
     def BorderoDre(file, access_token):
+        """
+        Executes the BorderoDre function.
+
+        Parameters:
+            file (str): The file to be processed.
+            access_token (str): The access token for authentication.
+
+        Returns:
+            bordero_dre: The transformed bordero_dre data.
+        """
         # Inclua a instrução logger.info para esta função
         logger.info(f'Iniciado Bordero DRE')
         # Crie uma instância da classe DataTransformer_DRE
@@ -46,6 +81,15 @@ class DreMacro:
 
     # ------------- BASE DRE ------------- 
     def BaseDre(access_token):
+        """
+        Generate the DRE (Demonstração do Resultado do Exercício) by merging three different DataFrames: receita_dre, despesa_dre, and bordero_dre.
+        
+        :param access_token: The access token required for authentication.
+        :type access_token: str
+        
+        :return: The resulting merged DataFrame containing the DRE.
+        :rtype: pandas.DataFrame
+        """
         receita_dre = DreMacro.ReceitaDre('receitamacro.xls', access_token)
         despesa_dre = DreMacro.DespesaDre('despesamacro.xls', access_token)
         bordero_dre = DreMacro.BorderoDre('borderomacro.xls', access_token)
@@ -57,6 +101,23 @@ class DreMacro:
 class DreTop:
     # ------------- RECEITA DRE -------------  
     def ReceitaDre(file, access_token):
+        """
+        Receives a file and an access token, and performs the following steps:
+        1. Logs an info message indicating the start of the Receita DRE process.
+        2. Creates an instance of the DataTransformerDre class.
+        3. Waits for 10 seconds.
+        4. Initiates the data transformation by calling the GetData method of the data_transformer object, passing the file parameter.
+        5. Transforms the returned data by calling the TransformData method of the data_transformer object, passing the receita_dre data and the 'Topfrio' parameter.
+        
+        Returns the transformed data.
+
+        :param file: The file to be processed.
+        :type file: str
+        :param access_token: The access token.
+        :type access_token: str
+        :return: The transformed data.
+        :rtype: object
+        """
         # Inclua a instrução logger.info para esta função
         logger.info(f'Iniciado Receita DRE')
         # Crie uma instância da classe DataTransformer_DRE
@@ -69,6 +130,21 @@ class DreTop:
         
     # ------------- DESPESA DRE -------------  
     def DespesaDre(file, access_token):
+        """
+        DespesaDre is a function that takes in a file and an access_token as parameters.
+        It initializes a logger and logs the start of the Despesa DRE process.
+        It then creates an instance of the DataTransformerDre class.
+        After a delay of 10 seconds, it starts the data transformation process.
+        The transformed data is then filtered for the 'Topfrio' category.
+        Finally, the transformed and filtered data is returned.
+        
+        Parameters:
+            file (str): The file to be processed.
+            access_token (str): The access token for authentication.
+        
+        Returns:
+            despesa_dre (Any): The transformed and filtered data.
+        """
         # Inclua a instrução logger.info para esta função
         logger.info(f'Iniciado Despesa DRE')
         # Crie uma instância da classe DataTransformer_DRE
@@ -81,6 +157,16 @@ class DreTop:
 
     # ------------- BORDERO DRE ------------- 
     def BorderoDre(file, access_token):
+        """
+        Generate the function comment for the given function body in a markdown code block with the correct language syntax.
+
+        :param file: The file parameter description.
+        :type file: The file parameter type.
+        :param access_token: The access_token parameter description.
+        :type access_token: The access_token parameter type.
+        :return: The return value description.
+        :rtype: The return value type.
+        """
         # Inclua a instrução logger.info para esta função
         logger.info(f'Iniciado Bordero DRE')
         # Crie uma instância da classe DataTransformer_DRE
@@ -93,6 +179,15 @@ class DreTop:
 
     # ------------- BASE DRE ------------- 
     def BaseDre(access_token):
+        """
+        Generates the DreTop by combining the data from three different sources: receita_dre, despesa_dre, and bordero_dre.
+        
+        Parameters:
+            access_token (str): The access token required to authenticate the requests.
+        
+        Returns:
+            pandas.DataFrame: The resulting DreTop DataFrame after concatenating the data from the three sources.
+        """
         receita_dre = DreTop.ReceitaDre('receitatop.xls', access_token)
         despesa_dre = DreTop.DespesaDre('despesatop.xls', access_token)
         bordero_dre = DreTop.BorderoDre('borderotop.xls', access_token)
@@ -103,6 +198,20 @@ class DreTop:
 
 class Vendas:
     def ClienteVendas(file, column_names):
+        """
+        ClienteVendas is a function that takes in a file and a list of column names as parameters.
+        It creates an instance of the DataTransformerVendas class and initializes the column widths to 100.
+        The function then sleeps for 10 seconds before starting the data transformation.
+        The GetData method of the data_transformer object is called with the file, column widths, and column names as arguments,
+        and the resulting dataframe is returned.
+
+        Parameters:
+        - file (str): The path to the file to be processed.
+        - column_names (list): A list of column names.
+
+        Returns:
+        - df (pandas.DataFrame): The transformed dataframe.
+        """
         # Inclua a instrução logger.info para esta função
         #logger.info(f'Iniciado Vendas')
         # Crie uma instância da classe DataTransformer_DRE
@@ -114,6 +223,16 @@ class Vendas:
         return df
 
     def PedidosVendas(file, column_names):
+        """
+        Generate the function comment for the following function.
+
+        Args:
+            file (str): The file path.
+            column_names (list): A list of column names.
+
+        Returns:
+            DataFrame: The transformed data.
+        """
         # Inclua a instrução logger.info para esta função
         #logger.info(f'Iniciado Vendas')
         # Crie uma instância da classe DataTransformer_DRE
@@ -125,6 +244,16 @@ class Vendas:
         return df
 
     def LtvVendas(file, column_names):
+        """
+        A function that takes a file and column names as inputs and returns a transformed dataframe.
+
+        Parameters:
+        - file (str): The path to the file to be processed.
+        - column_names (list): A list of column names for the dataframe.
+
+        Returns:
+        - df (pandas.DataFrame): The transformed dataframe.
+        """
         # Inclua a instrução logger.info para esta função
         #logger.info(f'Iniciado Vendas')
         # Crie uma instância da classe DataTransformer_DRE
@@ -136,6 +265,15 @@ class Vendas:
         return df
 
 def LimpaData(path):
+    """
+    Removes all files in the specified directory.
+
+    Parameters:
+    - path (str): The path to the directory.
+
+    Returns:
+    None
+    """
     pasta = path
     diretorio = os.listdir(pasta)
     for arquivo in diretorio:

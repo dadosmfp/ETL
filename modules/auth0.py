@@ -14,6 +14,15 @@ import msal
 
 class Authenticator:
     def __init__(self, env_file_path):
+        """
+        Initializes the Authenticator class with the path to the environment file.
+
+        Parameters:
+            env_file_path (str): The path to the environment file.
+
+        Returns:
+            None
+        """
         # Inicializa a classe Authenticator com o caminho do arquivo de ambiente.
         self.env_file_path = env_file_path
         self.env_vars = {}
@@ -26,6 +35,35 @@ class Authenticator:
         self.CHROME_PROFILE_PATH = ''
 
     def load_environment_variables(self):
+        """
+        Loads environment variables from the specified file and assigns them to class attributes.
+
+        Parameters:
+            None
+
+        Returns:
+            None
+
+        Raises:
+            Exception: If there is an error while loading the environment variables.
+
+        Description:
+            This function reads the specified file and extracts key-value pairs of environment variables.
+            The variables are assigned to the corresponding class attributes.
+            The following variables are assigned:
+                - client_id: The client ID.
+                - client_secret: The client secret.
+                - redirect_uri: The redirect URI.
+                - token_url: The token URL.
+                - scopes: A list of scopes.
+                - authority: The authority.
+                - CHROME_PROFILE_PATH: The Chrome profile path.
+
+            If an error occurs during the process, an exception is raised and logged.
+
+        Note:
+            - The file must be in the same directory as the script.
+        """
         try:
             # Carrega as variáveis de ambiente a partir do arquivo especificado.
             with open(self.env_file_path, 'r') as env_file:
@@ -46,6 +84,15 @@ class Authenticator:
             raise e
 
     def authenticate(self):
+        """
+        Authenticates the user and returns an access token.
+
+        Returns:
+            str: The access token.
+        
+        Raises:
+            Exception: If there is an error obtaining the access token.
+        """
         try:
             # Carregue as variáveis de ambiente antes de criar o aplicativo msal.
             self.load_environment_variables()
@@ -90,6 +137,18 @@ class Authenticator:
             raise e
 
     def list_files(self, access_token):
+        """
+        Lists the files in OneDrive using the provided access token.
+
+        Args:
+            access_token (str): The access token for authentication.
+
+        Returns:
+            None
+
+        Raises:
+            Exception: If there is an error while listing the files.
+        """
         try:
             # Lista os arquivos do OneDrive usando o token de acesso fornecido.
             onedrive_api_url = 'https://graph.microsoft.com/v1.0/me/drive/root/children'
@@ -109,6 +168,20 @@ class Authenticator:
             raise e
         
     def download_file(self, access_token, folder_id, file_name):
+        """
+        Downloads a file from Microsoft Graph API based on the provided access token, folder ID, and file name.
+
+        Parameters:
+            access_token (str): The access token required to authenticate the request.
+            folder_id (str): The ID of the folder where the file is located.
+            file_name (str): The name of the file to be downloaded.
+
+        Returns:
+            None
+
+        Raises:
+            Exception: If there is an error while downloading the file.
+        """
         try:
             # Monta a URL para fazer o download do arquivo com base no ID da pasta e no nome do arquivo.
             download_url = f'https://graph.microsoft.com/v1.0/me/drive/items/{folder_id}:/{file_name}:/content'
@@ -132,6 +205,21 @@ class Authenticator:
             raise e
         
     def upload_file(self, access_token, folder_id, file_name, file_path):
+        """
+        Uploads a file to the OneDrive using the Microsoft Graph API.
+
+        Args:
+            access_token (str): The access token for authentication.
+            folder_id (str): The ID of the folder in which the file will be uploaded.
+            file_name (str): The name of the file on the OneDrive.
+            file_path (str): The local path of the file to be uploaded.
+
+        Raises:
+            Exception: If there is an error while uploading the file.
+
+        Returns:
+            None
+        """
         try:
             # Define a URL de upload com base no ID da pasta.
             upload_url = f'https://graph.microsoft.com/v1.0/me/drive/items/{folder_id}:/{file_name}:/content'
@@ -152,6 +240,21 @@ class Authenticator:
             raise e
         
     def rename_file(self, access_token, folder_id, old_file_name, new_file_name):
+        """
+        Renames a file in the Microsoft Graph API.
+
+        Args:
+            access_token (str): The access token for authentication.
+            folder_id (str): The ID of the folder containing the file.
+            old_file_name (str): The current name of the file.
+            new_file_name (str): The desired new name for the file.
+
+        Raises:
+            Exception: If there is an error while renaming the file.
+
+        Returns:
+            None
+        """
         try:
             # Define a URL para renomear o arquivo com base no ID do item.
             rename_url = f'https://graph.microsoft.com/v1.0/me/drive/items/{folder_id}/children/{old_file_name}'
@@ -174,6 +277,20 @@ class Authenticator:
             raise e
     
     def get_file_id_by_name(self, access_token, folder_id, file_name):
+        """
+        Retrieves the file ID by its name from a given folder ID in Microsoft Graph API.
+
+        Args:
+            access_token (str): The access token for authentication.
+            folder_id (str): The ID of the folder to search in.
+            file_name (str): The name of the file to retrieve the ID for.
+
+        Returns:
+            str or None: The ID of the file if found, None otherwise.
+
+        Raises:
+            Exception: If an error occurs while retrieving the file ID.
+        """
         try:
             # Define a URL para listar os itens na pasta com base no ID da pasta.
             list_items_url = f'https://graph.microsoft.com/v1.0/me/drive/items/{folder_id}/children'
@@ -196,6 +313,21 @@ class Authenticator:
             raise e
     
     def move_file(self, access_token, source_folder_id, destination_folder_id, file_name):
+        """
+        Moves a file from a source folder to a destination folder.
+
+        Args:
+            access_token (str): The access token for authentication.
+            source_folder_id (str): The ID of the source folder.
+            destination_folder_id (str): The ID of the destination folder.
+            file_name (str): The name of the file to be moved.
+
+        Returns:
+            None
+
+        Raises:
+            Exception: If there is an error while moving the file.
+        """
         try:
             # Obtém o ID do arquivo com base no nome do arquivo e no ID da pasta de origem.
             file_id = self.get_file_id_by_name(access_token, source_folder_id, file_name)
