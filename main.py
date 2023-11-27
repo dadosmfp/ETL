@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from utils.logger import logger
 from modules.auth0 import Authenticator
-from modules.transformation import DataTransformerDre, DataTransformerVendas
+from modules.transformation import DataTransformerDre, DataTransformerVendas, DataTransformerEmissao
 from modules.extraction import DataExtractorOneDrive, DataExtractorRpa
 from modules.loading import DataLoadingOneDrive, UploadDb
 from time import sleep
@@ -192,7 +192,7 @@ class DreTop:
         despesa_dre = DreTop.DespesaDre('despesatop.xls', access_token)
         bordero_dre = DreTop.BorderoDre('borderotop.xls', access_token)
         sleep(1)
-        # Concatenar os DataFrames
+        # Concatenate the dataframes
         resultado_dre = pd.concat([receita_dre, despesa_dre, bordero_dre], ignore_index=True)
         return resultado_dre
 
@@ -282,7 +282,7 @@ def LimpaData(path):
             os.remove(caminho_arquivo)
         
 if __name__ == "__main__":
-    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"'
+    '''comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
     comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"'
@@ -371,4 +371,8 @@ if __name__ == "__main__":
         'data\\ltv.xlsx'
     )
     LimpaData("data")
-    logger.info("Processo de ETL concluído para DRE")
+    logger.info("Processo de ETL concluído para Vendas")'''
+    transformer = DataTransformerEmissao()
+    df = transformer.GetData(transformer, 'emissaomacro.xls')
+    df = transformer.TransformData(df, '002')
+    df.to_excel(f'verificar.xlsx')
