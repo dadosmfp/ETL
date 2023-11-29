@@ -173,7 +173,7 @@ class DataTransformerDre:
         # Para DESPESA
         juros_df.loc[juros_df['cod_contafin'].str.startswith('8'), ['contafin', 'dre_resum', 'class']] = ['Juros e Multas sobre Atraso de Pagamentos', 'Despesas Financeiras', 'Despesa Fixa']
         # Para RECEITA
-        juros_df.loc[juros_df['cod_contafin'].str.startswith('7'), ['contafin', 'dre_resum', 'class']] = ['Juros', 'Receita Não Operacionais', 'Receita Juros']
+        juros_df.loc[juros_df['cod_contafin'].str.startswith('7'), ['contafin', 'dre_resum', 'class']] = ['Juros', 'Receitas Não Operacionais', 'Receita Juros']
         # Concatenar as linhas modificadas de volta ao DataFrame original
         df = pd.concat([df, juros_df], ignore_index=True)
         # Ordenar o DataFrame pelo índice para que as linhas fiquem na ordem original
@@ -181,6 +181,7 @@ class DataTransformerDre:
         # Converter os valores da coluna 'valor' para floats
         df['valor'] = df['valor'].str.replace('.', '', regex=False)
         df['valor'] = df['valor'].str.replace(',', '.', regex=False).astype(float)
+        df = df.replace('nan', '', regex=False)
         # Aplicar a função abs() para tornar os valores positivos
         df['valor'] = df['valor'].abs()
         df['emp'] = f"{empresa}"
@@ -419,7 +420,7 @@ class DataTransformerEmissao:
             'Unnamed: 1': 'Duplicata',
             'Unnamed: 2': 'central_custo',
             'Unnamed: 3': 'excluir',
-            'Unnamed: 4': 'excluir',
+            'Unnamed: 4': 'Ser',
             'Unnamed: 5': 'excluir',
             'Unnamed: 6': 'excluir',
             'Unnamed: 7': 'excluir',
@@ -446,6 +447,31 @@ class DataTransformerEmissao:
         df.rename(columns=novo_cabecalho, inplace=True)
         # Exclua as colunas não necessárias
         df.drop(columns='excluir', inplace=True)
+        def excluir_linhas(dataframe, criterios_para_excluir):
+            """
+            Generates a function comment for the given function body in a markdown code block with the correct language syntax.
+
+            Parameters:
+                dataframe (DataFrame): The input dataframe.
+                criterios_para_excluir (dict): A dictionary containing the criteria for excluding rows.
+
+            Returns:
+                DataFrame: The modified dataframe after excluding rows based on the given criteria.
+            """
+            condição = True
+
+            for coluna, valores in criterios_para_excluir.items():
+                condição &= dataframe[coluna].isin(valores)
+
+            dataframe = dataframe[~condição]
+            
+            return dataframe
+        criterios_a_excluir = {'Duplicata': ['PII292401', '2139825','827905766'],
+                      'Ser': ['EMP'],
+                      'Cliente/Fornecedor': ['2742-EMPRESTIMO SOFISA CONTRATO Nº PII292401',
+                       '2738-EMPRESTIMO SAFRA CONTRATO Nº 2139825',
+                       '2354-BB CAPITAL DE GIRO DIGITAL Nº 827905766']}
+        df = excluir_linhas(df, criterios_a_excluir)
         # Remove as linhas
         df = df[~df['Duplicata'].astype(str).str.contains('Número')]
         df = df[~df['contafin'].astype(str).str.contains('623    T 7.4   ACERTO DE CONTAS ......................................................................')]
@@ -481,14 +507,16 @@ class DataTransformerEmissao:
         # Remove os espaços em branco à esquerda na coluna 'contafin'
         df['contafin'] = df['contafin'].str.strip()
         # Reordenar as colunas
-        df = df[['Duplicata', 'cod_contafin', 'contafin', 'Cliente/Fornecedor', 'central_custo','Dt. emissao', 'Dt. vencimento', 'valor']]
+        df = df[['Duplicata','Ser', 'cod_contafin', 'contafin', 'Cliente/Fornecedor', 'central_custo','Dt. emissao', 'Dt. vencimento', 'valor']]
         DataTransformerDre.ClassDre(self, df)
         df.sort_index(inplace=True)
         # Converter os valores da coluna 'valor' para floats
         df['valor'] = df['valor'].str.replace('.', '', regex=False)
         df['valor'] = df['valor'].str.replace(',', '.', regex=False)#.astype(float)
+        df = df.replace('nan', '', regex=False)
         # Aplicar a função abs() para tornar os valores positivos
         #df['valor'] = df['valor'].abs()
+        # Incluir a coluna 'emp'
         df['emp'] = f"{empresa}"
         #instrução de log para indicar o término da transformação
         logger.info('Transformação dos dados concluída.')

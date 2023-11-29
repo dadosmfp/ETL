@@ -378,4 +378,4 @@ if __name__ == "__main__":
     transformer = DataTransformerEmissao()
     df = transformer.GetData(transformer, 'emissaomacro.xls')
     df = transformer.TransformData(df, '002')
-    df.to_excel(f'verificar.xlsx')
+    df.to_excel(f'verificar.xlsx', index=False)
