@@ -173,7 +173,7 @@ class DataTransformerDre:
         # Para DESPESA
         juros_df.loc[juros_df['cod_contafin'].str.startswith('8'), ['contafin', 'dre_resum', 'class']] = ['Juros e Multas sobre Atraso de Pagamentos', 'Despesas Financeiras', 'Despesa Fixa']
         # Para RECEITA
-        juros_df.loc[juros_df['cod_contafin'].str.startswith('7'), ['contafin', 'dre_resum', 'class']] = ['Outro Valor para Contafin', 'Outro Valor para Dre_resum', 'Outra Classe']
+        juros_df.loc[juros_df['cod_contafin'].str.startswith('7'), ['contafin', 'dre_resum', 'class']] = ['Juros', 'Receita Não Operacionais', 'Receita Juros']
         # Concatenar as linhas modificadas de volta ao DataFrame original
         df = pd.concat([df, juros_df], ignore_index=True)
         # Ordenar o DataFrame pelo índice para que as linhas fiquem na ordem original
@@ -475,8 +475,7 @@ class DataTransformerEmissao:
                 # Convert float to string
                 text = str(text)
 
-            return re.sub(r'(\d+\.\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+.\d+|\d+\.\d+\.\d+)\s(.*)', r'\2', text)
-
+            return re.sub(r'\d+\.\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+\.\d+|\d+\.\d+\.\d+|\d+\s+[A-Z]|\.+$', '', text)
         # Aplicar a função à coluna 'contafin'
         df['contafin'] = df['contafin'].apply(remove_pattern).astype(str)
         # Remove os espaços em branco à esquerda na coluna 'contafin'

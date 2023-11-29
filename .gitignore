@@ -11,7 +11,9 @@ venv/
 117/
 
 #ignorar config
-config/
+config/cacert-2023-08-22.pem
+#ignorar config
+config/cfg.env
 
 #ignorar .vscode
 .vscode
@@ -21,3 +23,6 @@ data/
 
 #ignorar .pytest_cache/
 .pytest_cache/
+
+#ignorar .ipynb_checkpoints/
+.ipynb_checkpoints

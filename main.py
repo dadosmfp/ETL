@@ -282,7 +282,7 @@ def LimpaData(path):
             os.remove(caminho_arquivo)
         
 if __name__ == "__main__":
-    '''comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"'
+    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
     comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"'
@@ -371,7 +371,10 @@ if __name__ == "__main__":
         'data\\ltv.xlsx'
     )
     LimpaData("data")
-    logger.info("Processo de ETL concluído para Vendas")'''
+    logger.info("Processo de ETL concluído para Vendas")
+    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "emissaomacro.sikuli"'
+    extrator = DataExtractorRpa(comando)
+    extrator.rpa()
     transformer = DataTransformerEmissao()
     df = transformer.GetData(transformer, 'emissaomacro.xls')
     df = transformer.TransformData(df, '002')

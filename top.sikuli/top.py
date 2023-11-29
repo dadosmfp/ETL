@@ -19,7 +19,7 @@ formato_data = SimpleDateFormat("dd-MM-yyyy")
 data_do_dia_anterior = formato_data.format(data_anterior)
 
 click("1695906922406.png")
-if exists(Pattern("1695906944371.png").similar(0.91)):
+if exists(Pattern("1695906944371.png").similar(0.77)):
     click("1695906944371.png")
 
 wait(Pattern("1695906978944.png").similar(0.66),10)
@@ -365,7 +365,7 @@ type("v", Key.CTRL)
 sleep(1)
 while exists("1696876316980.png"):
     click("1696876330645.png")
-click(Pattern("1700671116384.png").similar(0.95).targetOffset(299,0))
+click(Pattern("1701280929693.png").targetOffset(548,0))
 click("1696276781684-1.png")
 click(Pattern("1696276804309-1.png").targetOffset(244,-4))
 click(Pattern("1696276827112-1.png").similar(0.88).targetOffset(-45,0))
