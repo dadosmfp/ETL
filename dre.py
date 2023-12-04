@@ -239,7 +239,7 @@ def LimpaData(path):
             os.remove(caminho_arquivo)
         
 if __name__ == "__main__":
-    '''comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"'
+    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
     comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"'
@@ -262,7 +262,7 @@ if __name__ == "__main__":
             file_path='data\\base.xlsx'
         )
     LimpaData("data")
-    sleep(3)'''
+    sleep(3)
     comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "emissaomacro.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
@@ -274,8 +274,8 @@ if __name__ == "__main__":
     if access_token:
         data_loader = DataLoadingOneDrive('config\\cfg.env', access_token)
         data_extractor = DataExtractorOneDrive('config\\cfg.env', access_token)
-        macrofrio = DreMacro.EmissaoDre(access_token)
-        topfrio = DreTop.EmissaoDre(access_token)
+        macrofrio = DreMacro.EmissaoDre('emissaomacro.xls',access_token)
+        topfrio = DreTop.EmissaoDre('emissatop.xls' ,access_token)
         base_final = pd.concat([macrofrio, topfrio], ignore_index=True)
         base_final.to_excel('data\\baseemissao.xlsx')
         data_loader.upload_dre(

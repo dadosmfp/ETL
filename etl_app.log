@@ -686,3 +686,108 @@ Stacktrace:
 2023-12-04 09:48:40,341 [INFO]: O comando Java foi executado com sucesso.
 2023-12-04 10:00:16,638 [INFO]: O comando Java foi executado com sucesso.
 2023-12-04 10:00:35,432 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-04 10:04:31,847 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
+2023-12-04 10:04:41,851 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-12-04 10:09:01,472 [INFO]: O comando Java foi executado com sucesso.
+2023-12-04 10:09:11,484 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-12-04 10:09:11,484 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 10:09:11,532 [INFO]: Dados extraídos com sucesso.
+2023-12-04 10:09:21,536 [INFO]: Selecionando o arquivo Excel: pedidos.txt
+2023-12-04 10:09:21,536 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 10:09:21,583 [INFO]: Dados extraídos com sucesso.
+2023-12-04 10:09:31,611 [INFO]: Selecionando o arquivo Excel: ltv.txt
+2023-12-04 10:09:31,611 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 10:09:31,690 [INFO]: Dados extraídos com sucesso.
+2023-12-04 10:22:28,269 [INFO]: O comando Java foi executado com sucesso.
+2023-12-04 10:34:04,962 [INFO]: O comando Java foi executado com sucesso.
+2023-12-04 10:34:24,408 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-04 10:49:06,171 [INFO]: O comando Java foi executado com sucesso.
+2023-12-04 11:00:19,063 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "emissaotop.sikuli"' returned non-zero exit status 1.
+2023-12-04 11:00:38,297 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-04 11:15:35,780 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "emissaomacro.sikuli"' returned non-zero exit status 1.
+2023-12-04 11:15:55,045 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "emissaotop.sikuli"' returned non-zero exit status 1.
+2023-12-04 11:16:23,207 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-04 11:16:31,770 [INFO]: Iniciado Emissão DRE
+2023-12-04 11:28:57,056 [INFO]: O comando Java foi executado com sucesso.
+2023-12-04 11:40:34,837 [INFO]: O comando Java foi executado com sucesso.
+2023-12-04 11:40:53,521 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-04 11:41:00,267 [INFO]: Iniciado Emissão DRE
+2023-12-04 11:41:10,282 [INFO]: Selecionando o arquivo Excel: emissaomacro.xls
+2023-12-04 11:41:10,282 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 11:41:11,454 [INFO]: Dados extraídos com sucesso.
+2023-12-04 11:41:11,454 [INFO]: Iniciando transformação dos dados...
+2023-12-04 11:41:13,485 [INFO]: Transformação dos dados concluída.
+2023-12-04 11:41:13,485 [INFO]: Iniciado Emissão DRE
+2023-12-04 11:41:23,501 [INFO]: Selecionando o arquivo Excel: emissatop.xls
+2023-12-04 11:41:23,501 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 11:41:23,766 [INFO]: Dados extraídos com sucesso.
+2023-12-04 11:41:23,766 [INFO]: Iniciando transformação dos dados...
+2023-12-04 11:41:24,407 [INFO]: Transformação dos dados concluída.
+2023-12-04 11:41:44,032 [ERROR]: Erro ao renomear o arquivo. Código de status: 400
+2023-12-04 11:41:44,641 [ERROR]: Arquivo não encontrado na pasta de origem.
+2023-12-04 11:41:47,391 [INFO]: Arquivo "baseemissao.xlsx" foi carregado com sucesso.
+2023-12-04 11:57:51,521 [INFO]: O comando Java foi executado com sucesso.
+2023-12-04 12:09:24,382 [INFO]: O comando Java foi executado com sucesso.
+2023-12-04 12:09:43,322 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-04 12:09:49,864 [INFO]: Iniciado Emissão DRE
+2023-12-04 12:09:59,864 [INFO]: Selecionando o arquivo Excel: emissaomacro.xls
+2023-12-04 12:09:59,864 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 12:10:01,036 [INFO]: Dados extraídos com sucesso.
+2023-12-04 12:10:01,036 [INFO]: Iniciando transformação dos dados...
+2023-12-04 12:10:03,051 [INFO]: Transformação dos dados concluída.
+2023-12-04 12:10:03,051 [INFO]: Iniciado Emissão DRE
+2023-12-04 12:10:13,067 [INFO]: Selecionando o arquivo Excel: emissatop.xls
+2023-12-04 12:10:13,067 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 12:10:13,395 [INFO]: Dados extraídos com sucesso.
+2023-12-04 12:10:13,395 [INFO]: Iniciando transformação dos dados...
+2023-12-04 12:10:14,113 [INFO]: Transformação dos dados concluída.
+2023-12-04 12:10:33,458 [INFO]: Arquivo renomeado para "baseemissao03122023.xlsx" com sucesso.
+2023-12-04 12:10:34,660 [ERROR]: Erro ao mover o arquivo. Código de status: 400
+2023-12-04 12:10:36,552 [INFO]: Arquivo "baseemissao.xlsx" foi carregado com sucesso.
+2023-12-04 15:18:41,977 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"' returned non-zero exit status 1.
+2023-12-04 15:18:50,706 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"' returned non-zero exit status 1.
+2023-12-04 15:18:57,195 [ERROR]: Erro na autenticação: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x008072A3+45731]
+	(No symbol) [0x00792D51]
+	(No symbol) [0x0068880D]
+	(No symbol) [0x0066F75E]
+	(No symbol) [0x006DC11B]
+	(No symbol) [0x006EB2D3]
+	(No symbol) [0x006D7DD6]
+	(No symbol) [0x006B31F6]
+	(No symbol) [0x006B439D]
+	GetHandleVerifier [0x00B10716+3229462]
+	GetHandleVerifier [0x00B584C8+3523784]
+	GetHandleVerifier [0x00B5214C+3498316]
+	GetHandleVerifier [0x00891680+611968]
+	(No symbol) [0x0079CCCC]
+	(No symbol) [0x00798DF8]
+	(No symbol) [0x00798F1D]
+	(No symbol) [0x0078B2C7]
+	BaseThreadInitThunk [0x7780FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77DB7B5E+286]
+	RtlGetAppContainerNamedObjectPath [0x77DB7B2E+238]
+
+2023-12-04 15:50:47,053 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"' returned non-zero exit status 1.
+2023-12-04 15:50:57,666 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"' returned non-zero exit status 1.
+2023-12-04 15:51:22,909 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-04 15:51:32,338 [INFO]: Iniciado Receita DRE
+2023-12-04 15:51:45,616 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
+2023-12-04 15:52:10,677 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
+2023-12-04 15:52:20,122 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-12-04 17:13:43,279 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
+2023-12-04 17:14:05,166 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
+2023-12-04 17:16:22,417 [INFO]: O comando Java foi executado com sucesso.
+2023-12-04 17:16:35,667 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-12-04 17:16:35,667 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 17:16:35,724 [INFO]: Dados extraídos com sucesso.
+2023-12-04 17:16:47,915 [INFO]: Selecionando o arquivo Excel: pedidos.txt
+2023-12-04 17:16:47,915 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 17:16:47,971 [INFO]: Dados extraídos com sucesso.
+2023-12-04 17:16:58,955 [INFO]: Selecionando o arquivo Excel: ltv.txt
+2023-12-04 17:16:58,955 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-04 17:16:59,039 [INFO]: Dados extraídos com sucesso.
+2023-12-04 17:19:31,435 [INFO]: O comando Java foi executado com sucesso.
