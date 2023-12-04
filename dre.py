@@ -97,6 +97,18 @@ class DreMacro:
         # Concatenar os DataFrames
         resultado_dre = pd.concat([receita_dre, despesa_dre, bordero_dre], ignore_index=True)
         return resultado_dre
+
+    def EmissaoDre(file, access_token):
+
+        # Inclua a instrução logger.info para esta função
+        logger.info(f'Iniciado Emissão DRE')
+        # Crie uma instância da classe DataTransformer_DRE
+        data_transformer = DataTransformerEmissao()
+        sleep(10)
+        # Inicia a transformação de dados
+        despesa_dre = data_transformer.GetData(data_transformer, f'{file}')
+        despesa_dre = data_transformer.TransformData(despesa_dre,'Macrofrio')
+        return despesa_dre
     
 class DreTop:
     # ------------- RECEITA DRE -------------  
@@ -196,73 +208,18 @@ class DreTop:
         resultado_dre = pd.concat([receita_dre, despesa_dre, bordero_dre], ignore_index=True)
         return resultado_dre
 
-class Vendas:
-    def ClienteVendas(file, column_names):
-        """
-        ClienteVendas is a function that takes in a file and a list of column names as parameters.
-        It creates an instance of the DataTransformerVendas class and initializes the column widths to 100.
-        The function then sleeps for 10 seconds before starting the data transformation.
-        The GetData method of the data_transformer object is called with the file, column widths, and column names as arguments,
-        and the resulting dataframe is returned.
+    def EmissaoDre(file, access_token):
 
-        Parameters:
-        - file (str): The path to the file to be processed.
-        - column_names (list): A list of column names.
-
-        Returns:
-        - df (pandas.DataFrame): The transformed dataframe.
-        """
         # Inclua a instrução logger.info para esta função
-        #logger.info(f'Iniciado Vendas')
+        logger.info(f'Iniciado Emissão DRE')
         # Crie uma instância da classe DataTransformer_DRE
-        data_transformer = DataTransformerVendas()
-        column_widths = [100] * len(column_names)
+        data_transformer = DataTransformerEmissao()
         sleep(10)
         # Inicia a transformação de dados
-        df = data_transformer.GetData(data_transformer, f'{file}', column_widths, column_names)
-        return df
+        despesa_dre = data_transformer.GetData(data_transformer, f'{file}')
+        despesa_dre = data_transformer.TransformData(despesa_dre,'Topfrio')
+        return despesa_dre
 
-    def PedidosVendas(file, column_names):
-        """
-        Generate the function comment for the following function.
-
-        Args:
-            file (str): The file path.
-            column_names (list): A list of column names.
-
-        Returns:
-            DataFrame: The transformed data.
-        """
-        # Inclua a instrução logger.info para esta função
-        #logger.info(f'Iniciado Vendas')
-        # Crie uma instância da classe DataTransformer_DRE
-        data_transformer = DataTransformerVendas()
-        column_widths = [100] * len(column_names)
-        sleep(10)
-        # Inicia a transformação de dados
-        df = data_transformer.GetData(data_transformer, f'{file}', column_widths, column_names)
-        return df
-
-    def LtvVendas(file, column_names):
-        """
-        A function that takes a file and column names as inputs and returns a transformed dataframe.
-
-        Parameters:
-        - file (str): The path to the file to be processed.
-        - column_names (list): A list of column names for the dataframe.
-
-        Returns:
-        - df (pandas.DataFrame): The transformed dataframe.
-        """
-        # Inclua a instrução logger.info para esta função
-        #logger.info(f'Iniciado Vendas')
-        # Crie uma instância da classe DataTransformer_DRE
-        data_transformer = DataTransformerVendas()
-        column_widths = [100] * len(column_names)
-        sleep(10)
-        # Inicia a transformação de dados
-        df = data_transformer.GetData(data_transformer, f'{file}', column_widths, column_names)
-        return df
 
 def LimpaData(path):
     """
@@ -282,7 +239,7 @@ def LimpaData(path):
             os.remove(caminho_arquivo)
         
 if __name__ == "__main__":
-    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"'
+    '''comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
     comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"'
@@ -305,77 +262,27 @@ if __name__ == "__main__":
             file_path='data\\base.xlsx'
         )
     LimpaData("data")
-    sleep(3)
-    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"'
-    extrator = DataExtractorRpa(comando)
-    extrator.rpa()
-    clientes = Vendas.ClienteVendas(
-        'clientes.txt',
-        column_names=[
-            "ufcli",
-            "cidadecli",
-            "razsoccli",
-            "id_clientes"
-        ]
-    )
-
-    pedido = Vendas.PedidosVendas(
-        'pedidos.txt',
-        column_names=[
-            'pedidoped',
-            'dataped',
-            'totalped',
-            'tpnotaped_id',
-            'codcliped_id',
-            'codrepped_id',
-            'empresaped'
-        ]
-    )
-
-    ltv = Vendas.LtvVendas(
-        'ltv.txt',
-        column_names=[
-            'cod_cliente',
-            'cliente',
-            'endereco',
-            'numero',
-            'ddd',
-            'celular',
-            'telefone',
-            'email',
-            'cadastro',
-            'tempo_casa_anos',
-            'classificacao',
-            'tempo_ult_ped_meses',
-            'situacao',
-            'media_dias_cliente',
-            'ultima_data_pedido',
-            'ltv',
-            'qntd_pedido'
-        ]
-    )
-    clientes.to_excel('data\\clientes.xlsx', index=False)
-    pedido.to_excel('data\\pedidos.xlsx', index=False)
-    ltv.to_excel('data\\ltv.xlsx', index=False)
-    db_connection = UploadDb()
-    db_connection.upload_data(
-        'clientes',
-        'data\\clientes.xlsx'
-    )
-    db_connection.upload_data(
-        'pedido',
-        'data\\pedidos.xlsx'
-    )
-    db_connection.upload_data(
-        'ltv',
-        'data\\ltv.xlsx'
-    )
-    LimpaData("data")
-    logger.info("Processo de ETL concluído para Vendas")
+    sleep(3)'''
     comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "emissaomacro.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
-    transformer = DataTransformerEmissao()
-    df = transformer.GetData(transformer, 'emissaomacro.xls')
-    df = transformer.TransformData(df, '002')
-    df.to_excel(f'verificar.xlsx', index=False)
+    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "emissaotop.sikuli"'
+    extrator = DataExtractorRpa(comando)
+    extrator.rpa()
+    authenticator = Authenticator('config\\cfg.env')
+    access_token = authenticator.authenticate()
+    if access_token:
+        data_loader = DataLoadingOneDrive('config\\cfg.env', access_token)
+        data_extractor = DataExtractorOneDrive('config\\cfg.env', access_token)
+        macrofrio = DreMacro.EmissaoDre(access_token)
+        topfrio = DreTop.EmissaoDre(access_token)
+        base_final = pd.concat([macrofrio, topfrio], ignore_index=True)
+        base_final.to_excel('data\\baseemissao.xlsx')
+        data_loader.upload_dre(
+            folder_id='436041249D165BBA%216218', 
+            destination_folder_id='436041249D165BBA%216217',
+            old_file_name='baseemissao.xlsx',
+            file_name='baseemissao.xlsx',
+            file_path='data\\baseemissao.xlsx'
+        )
+    LimpaData("data")

@@ -61,7 +61,7 @@ type('01012022')
 doubleClick(Pattern("1695908489387.png").targetOffset(30,-1))
 type(data_do_dia_anterior)
 doubleClick(Pattern("1695908507500.png").targetOffset(26,-6))
-type('002')
+type('003')
 if exists(Pattern("1700757930392.png").exact()):
     click(Pattern("1700757930392.png").exact().targetOffset(32,0))
 click("1695908987848.png")
