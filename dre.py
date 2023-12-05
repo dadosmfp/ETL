@@ -239,10 +239,10 @@ def LimpaData(path):
             os.remove(caminho_arquivo)
         
 if __name__ == "__main__":
-    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"'
+    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r ".\RPA\macro.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
-    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"'
+    comando = r'java -jar "sikulixide-2.0.5-win.jar" -r ".\RPA\top.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
     authenticator = Authenticator('config\\cfg.env')
@@ -263,10 +263,10 @@ if __name__ == "__main__":
         )
     LimpaData("data")
     sleep(3)
-    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "emissaomacro.sikuli"'
+    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r ".\RPA\emissaomacro.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
-    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "emissaotop.sikuli"'
+    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r ".\RPA\emissaotop.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
     authenticator = Authenticator('config\\cfg.env')
