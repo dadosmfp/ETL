@@ -791,3 +791,88 @@ Stacktrace:
 2023-12-04 17:16:58,955 [INFO]: Extraindo os dados do arquivo selecionado...
 2023-12-04 17:16:59,039 [INFO]: Dados extraídos com sucesso.
 2023-12-04 17:19:31,435 [INFO]: O comando Java foi executado com sucesso.
+2023-12-05 04:17:01,275 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "macro.sikuli"' returned non-zero exit status 1.
+2023-12-05 04:17:09,896 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "top.sikuli"' returned non-zero exit status 1.
+2023-12-05 04:17:30,895 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-05 04:17:37,498 [INFO]: Iniciado Receita DRE
+2023-12-05 04:17:47,507 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
+2023-12-05 04:17:56,580 [ERROR]: O comando Java falhou com o seguinte erro: Command 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"' returned non-zero exit status 1.
+2023-12-05 04:18:06,580 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-12-05 04:18:06,580 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 04:18:06,648 [INFO]: Dados extraídos com sucesso.
+2023-12-05 04:18:16,658 [INFO]: Selecionando o arquivo Excel: pedidos.txt
+2023-12-05 04:18:16,658 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 04:18:16,746 [INFO]: Dados extraídos com sucesso.
+2023-12-05 04:18:26,756 [INFO]: Selecionando o arquivo Excel: ltv.txt
+2023-12-05 04:18:26,756 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 04:18:26,892 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:03:36,570 [INFO]: O comando Java foi executado com sucesso.
+2023-12-05 08:23:22,060 [INFO]: O comando Java foi executado com sucesso.
+2023-12-05 08:23:41,788 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-05 08:23:48,564 [INFO]: Iniciado Receita DRE
+2023-12-05 08:23:58,579 [INFO]: Selecionando o arquivo Excel: receitamacro.xls
+2023-12-05 08:23:58,579 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:23:58,688 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:23:58,688 [INFO]: Iniciando transformação dos dados...
+2023-12-05 08:23:59,033 [INFO]: Transformação dos dados concluída.
+2023-12-05 08:23:59,033 [INFO]: Iniciado Despesa DRE
+2023-12-05 08:24:09,048 [INFO]: Selecionando o arquivo Excel: despesamacro.xls
+2023-12-05 08:24:09,048 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:24:10,517 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:24:10,517 [INFO]: Iniciando transformação dos dados...
+2023-12-05 08:24:12,064 [INFO]: Transformação dos dados concluída.
+2023-12-05 08:24:12,064 [INFO]: Iniciado Bordero DRE
+2023-12-05 08:24:22,064 [INFO]: Selecionando o arquivo Excel: borderomacro.xls
+2023-12-05 08:24:22,064 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:24:22,095 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:24:22,095 [INFO]: Iniciando transformação dos dados...
+2023-12-05 08:24:22,095 [INFO]: Transformação dos dados concluída.
+2023-12-05 08:24:23,111 [INFO]: Iniciado Receita DRE
+2023-12-05 08:24:33,126 [INFO]: Selecionando o arquivo Excel: receitatop.xls
+2023-12-05 08:24:33,126 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:24:33,189 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:24:33,189 [INFO]: Iniciando transformação dos dados...
+2023-12-05 08:24:33,501 [INFO]: Transformação dos dados concluída.
+2023-12-05 08:24:33,501 [INFO]: Iniciado Despesa DRE
+2023-12-05 08:24:43,517 [INFO]: Selecionando o arquivo Excel: despesatop.xls
+2023-12-05 08:24:43,517 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:24:43,673 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:24:43,673 [INFO]: Iniciando transformação dos dados...
+2023-12-05 08:24:44,064 [INFO]: Transformação dos dados concluída.
+2023-12-05 08:24:44,064 [INFO]: Iniciado Bordero DRE
+2023-12-05 08:24:54,064 [INFO]: Selecionando o arquivo Excel: borderotop.xls
+2023-12-05 08:24:54,064 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:24:54,064 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:24:54,064 [INFO]: Iniciando transformação dos dados...
+2023-12-05 08:24:54,079 [INFO]: Transformação dos dados concluída.
+2023-12-05 08:25:12,114 [INFO]: Arquivo renomeado para "base04122023.xlsx" com sucesso.
+2023-12-05 08:25:13,111 [ERROR]: Erro ao mover o arquivo. Código de status: 400
+2023-12-05 08:25:15,298 [INFO]: Arquivo "base.xlsx" foi carregado com sucesso.
+2023-12-05 08:37:18,736 [INFO]: O comando Java foi executado com sucesso.
+2023-12-05 08:48:52,370 [INFO]: O comando Java foi executado com sucesso.
+2023-12-05 08:49:10,949 [INFO]: O botão não foi encontrado ou não está visível
+2023-12-05 08:49:17,461 [INFO]: Iniciado Emissão DRE
+2023-12-05 08:49:27,477 [INFO]: Selecionando o arquivo Excel: emissaomacro.xls
+2023-12-05 08:49:27,477 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:49:28,617 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:49:28,617 [INFO]: Iniciando transformação dos dados...
+2023-12-05 08:49:30,649 [INFO]: Transformação dos dados concluída.
+2023-12-05 08:49:30,649 [INFO]: Iniciado Emissão DRE
+2023-12-05 08:49:40,668 [INFO]: Selecionando o arquivo Excel: emissatop.xls
+2023-12-05 08:49:40,668 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:49:40,930 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:49:40,930 [INFO]: Iniciando transformação dos dados...
+2023-12-05 08:49:41,570 [INFO]: Transformação dos dados concluída.
+2023-12-05 08:50:01,946 [INFO]: Arquivo renomeado para "baseemissao04122023.xlsx" com sucesso.
+2023-12-05 08:50:03,430 [ERROR]: Erro ao mover o arquivo. Código de status: 400
+2023-12-05 08:50:05,290 [INFO]: Arquivo "baseemissao.xlsx" foi carregado com sucesso.
+2023-12-05 08:53:06,635 [INFO]: O comando Java foi executado com sucesso.
+2023-12-05 08:53:16,651 [INFO]: Selecionando o arquivo Excel: clientes.txt
+2023-12-05 08:53:16,651 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:53:16,698 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:53:26,698 [INFO]: Selecionando o arquivo Excel: pedidos.txt
+2023-12-05 08:53:26,698 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:53:26,760 [INFO]: Dados extraídos com sucesso.
+2023-12-05 08:53:36,776 [INFO]: Selecionando o arquivo Excel: ltv.txt
+2023-12-05 08:53:36,776 [INFO]: Extraindo os dados do arquivo selecionado...
+2023-12-05 08:53:36,854 [INFO]: Dados extraídos com sucesso.
