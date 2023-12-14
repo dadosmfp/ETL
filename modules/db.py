@@ -188,3 +188,24 @@ class DatabaseConnection:
                 print(f"Coluna '{column_name}' excluída da tabela '{table_name}'.")
         except Exception as e:
             print(f"Erro ao excluir a coluna: {e}")
+
+    def get_data_from_table(self, table_name):
+        """
+        Retrieves data from the specified table in the database.
+
+        Args:
+            table_name (str): The name of the table to retrieve data from.
+
+        Returns:
+            pandas.DataFrame: A DataFrame containing the retrieved data.
+
+        Raises:
+            Exception: If there is an error while retrieving data from the table.
+        """
+        try:
+            with self.engine.connect() as connection:
+                select_sql = text(f"SELECT * FROM `{table_name}`;")
+                df = pd.read_sql(select_sql, connection)
+                return df
+        except Exception as e:
+            print(f"Erro ao recuperar os dados da tabela: {e}")

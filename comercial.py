@@ -93,7 +93,7 @@ def LimpaData(path):
             os.remove(caminho_arquivo)
         
 if __name__ == "__main__":
-    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r "comercial.sikuli"'
+    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r ".\\RPA\\comercial.sikuli"'
     extrator = DataExtractorRpa(comando)
     extrator.rpa()
     clientes = Vendas.ClienteVendas(
