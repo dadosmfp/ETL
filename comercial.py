@@ -158,3 +158,6 @@ if __name__ == "__main__":
         'data\\ltv.xlsx'
     )
     LimpaData("data")
+    comando = 'java -jar "sikulixide-2.0.5-win.jar" -r ".\\RPA\\pbi.sikuli"'
+    extrator = DataExtractorRpa(comando)
+    extrator.rpa()
